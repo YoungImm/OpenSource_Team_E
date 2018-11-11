@@ -1,13 +1,11 @@
 # OpenSource_Team_E
     조선대학교 오픈소스SW개론 수업에서 수행하는 팀프로젝트입니다.
 
-</br>
+
 # Overview
 
 ![ex_screenshot](./img/overview.PNG)
 --18.11.07--
-
-</br>
 
 # Introduction
 * 개발프로그램 : 결정 도우미 프로그램
@@ -16,6 +14,6 @@
 
 
 # Release Notes
-### 2018/11/07
+### 2018/11/07 #1
 * README.md 파일 최초 작성
 * Overview 사진등록, Introduction 작성
