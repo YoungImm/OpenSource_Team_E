@@ -15,5 +15,6 @@
 
 # Release Notes
 ### 2018/11/11 #1
+Updates
 * README.md 파일 최초 작성
 * Overview 사진등록, Introduction 작성
