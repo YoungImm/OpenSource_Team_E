@@ -13,3 +13,7 @@
 * 내용 : 일상생활에서 생기는 결정의 어려움을 도와주는 프로그램입니다.
 
 
+# Release Notes
+### 2018/11/07
+* README.md 파일 최초 작성
+* Overview 사진등록, Introduction 작성
