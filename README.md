@@ -5,7 +5,7 @@
 # Overview
 
 ![ex_screenshot](./img/overview.PNG)
---18.11.07--
+
 
 # Introduction
 * 개발프로그램 : 결정 도우미 프로그램
@@ -14,6 +14,6 @@
 
 
 # Release Notes
-### 2018/11/07 #1
+### 2018/11/11 #1
 * README.md 파일 최초 작성
 * Overview 사진등록, Introduction 작성
