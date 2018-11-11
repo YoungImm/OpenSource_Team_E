@@ -1,5 +1,5 @@
 # OpenSource_Team_E
-    조선대학교 오픈소스SW개론 수업에서 수행하는 팀프로젝트입니다.
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">조선대학교 오픈소스SW개론 수업에서 수행하는 팀프로젝트입니다.
 
 
 # Overview
