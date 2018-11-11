@@ -18,3 +18,7 @@
 Updates
 * README.md 파일 최초 작성
 * Overview 사진등록, Introduction 작성
+
+### 2018/11/12 #2
+Updates
+* 프로젝트에 사용할 기본 Java Project 틀 Push
