@@ -22,3 +22,8 @@ Updates
 ### 2018/11/12 #2
 Updates
 * 프로젝트에 사용할 기본 Java Project 틀 Push
+
+### 2018/11/17 #3
+Updates
+* 11.12에 업데이트한 틀에 홈화면 UI추가
+![ex_screenshot](./img/home.PNG)
