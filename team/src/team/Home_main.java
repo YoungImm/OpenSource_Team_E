@@ -34,7 +34,7 @@ public class Home_main extends JFrame {
 					e.printStackTrace();
 				}
 			}
-		});
+		}); 
 	}
 
 	/**
