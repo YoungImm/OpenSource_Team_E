@@ -25,7 +25,7 @@ public class Home_main extends JFrame {
 	 * Launch the application.
 	 */
 	
-	//This is just test.
+	//Hi
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
