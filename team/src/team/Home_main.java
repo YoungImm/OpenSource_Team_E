@@ -58,7 +58,7 @@ public class Home_main extends JFrame {
 		panel.setBackground(SystemColor.textHighlight);
 		contentPane.add(panel);
 		panel.setLayout(null);
-		
+		 
 		JLabel lblNewLabel_1 = new JLabel("\uACB0\uC815\uC7A5\uC560 \uD574\uACB0 \uD504\uB85C\uADF8\uB7A8");
 		lblNewLabel_1.setBounds(121, 483, 265, 38);
 		lblNewLabel_1.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
