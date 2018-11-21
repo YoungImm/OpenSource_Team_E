@@ -99,6 +99,16 @@ public class Play_choice extends JFrame {
 		btnNewButton_1.setBorder(null);
 		contentPane.add(btnNewButton_1);
 		
+		btnNewButton_1.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Home_main home_frame = new Home_main();
+				home_frame.setVisible(true);
+				dispose();
+			}
+		});
+		
 		JLabel lblNewLabel_1 = new JLabel("X");
 		lblNewLabel_1.addMouseListener(new MouseAdapter() {
 			@Override
