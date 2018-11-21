@@ -74,6 +74,7 @@ public class Home_main extends JFrame {
 		panel.add(lblNewLabel);
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\JY\\git\\OpenSource_Team_E\\team\\img\\choice.PNG"));
 		
+		//test
 		JLabel lblHome = new JLabel("HOME");
 		lblHome.setForeground(Color.WHITE);
 		lblHome.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 40));
