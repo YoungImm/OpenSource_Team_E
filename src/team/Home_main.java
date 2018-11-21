@@ -42,6 +42,7 @@ public class Home_main extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	//테스트테스트
 	public Home_main() {
 		setTitle("\uACB0\uC815\uC7A5\uC560 \uD574\uACB0 \uD504\uB85C\uADF8\uB7A8");
 		setBackground(Color.WHITE);
