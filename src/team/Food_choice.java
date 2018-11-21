@@ -28,27 +28,37 @@ import java.awt.event.ActionListener;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
  
-public class food {
- 
+public class Food_choice extends JFrame{
+		
     static JFrame J;
     
     public static void main(String[] args) {
         
-        
-        J = new JFrame("¿ΩΩƒ");    
+    	EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Food_choice frame = new Food_choice();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});  
+ 		  
+    }
+    
+    public Food_choice() {
+    	J = new JFrame("ÏùåÏãù");    
         JTabbedPane  jtab = new JTabbedPane();
         
         JPanel panel = new JPanel(); 
-        
-        
-        J.setLocation(700, 400);
+        J.setLocation(550,200);
         J.setSize(665,641);
         J.getContentPane().add("Center",jtab);
         JPanel jp1 = new JPanel();
         jp1.setBackground(new Color(0, 102, 153));
         
        
-        jtab.add("π‰", jp1);
+        jtab.add("Î∞•", jp1);
         jp1.setLayout(null);
         
         Button button = new Button("\uC2DC\uC791");
@@ -70,7 +80,7 @@ public class food {
         jp1.add(button_1);
         
         JLabel lblNewLabel = new JLabel("New label");
-        lblNewLabel.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\cfaf.jpg"));
+        lblNewLabel.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\food.jpg"));
         lblNewLabel.setBounds(137, 66, 369, 321);
         jp1.add(lblNewLabel);
         
@@ -89,11 +99,11 @@ public class food {
         jp1.add(button_2);
         JPanel jp2 = new JPanel();
         jp2.setBackground(new Color(0, 102, 153));
-        jtab.add("¿Ω∑·", jp2);
+        jtab.add("ÏùåÎ£å", jp2);
         jp2.setLayout(null);
         
         JLabel lblNewLabel_1 = new JLabel("New label");
-        lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uC74C\uB8CC\uC218.jpg"));
+        lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\drink.jpg"));
         lblNewLabel_1.setBounds(139, 69, 367, 322);
         jp2.add(lblNewLabel_1);
         
@@ -120,7 +130,7 @@ public class food {
         jp2.add(button_5);
         JPanel jp3 = new JPanel();
         jp3.setBackground(new Color(0, 102, 153));
-        jtab.add("µ¿˙∆Æ", jp3);
+        jtab.add("ÎîîÏ†ÄÌä∏", jp3);
         jp3.setLayout(null);
         
         JLabel label = new JLabel("\uC74C\uC2DD\uC774\uB984");
@@ -128,7 +138,7 @@ public class food {
         jp3.add(label);
         
         JLabel label_1 = new JLabel("New label");
-        label_1.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uB514\uC800\uD2B8.jpg"));
+        label_1.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\dessert.jpg"));
         label_1.setBounds(136, 68, 367, 322);
         jp3.add(label_1);
         
@@ -153,13 +163,7 @@ public class food {
         button_8.setBackground(new Color(0, 102, 153));
         button_8.setBounds(597, 0, 47, 43);
         jp3.add(button_8);
-        J.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        J.setVisible(true);
-        
-        
-    
-
- 		  
+        J.setVisible(true);        
+    	
     }
-        
 }

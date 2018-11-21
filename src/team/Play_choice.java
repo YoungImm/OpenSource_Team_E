@@ -30,7 +30,7 @@ import java.awt.Cursor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class ChangeWB extends JFrame {
+public class Play_choice extends JFrame {
 
 	private JPanel contentPane;
 	private JLabel lblNewLabel_2;
@@ -42,7 +42,7 @@ public class ChangeWB extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ChangeWB frame = new ChangeWB();
+					Play_choice frame = new Play_choice();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -54,7 +54,7 @@ public class ChangeWB extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ChangeWB() {
+	public Play_choice() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 603, 440);
 		contentPane = new JPanel();
@@ -62,6 +62,7 @@ public class ChangeWB extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		setLocation(550,200);
 		
 		JButton btnNewButton = new JButton("\uC2DC\uC791");
 		btnNewButton.setBackground(new Color(230, 230, 250));
@@ -78,7 +79,7 @@ public class ChangeWB extends JFrame {
 		contentPane.add(button);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\chosun\\Downloads\\videogame (1).png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\videogame (1).png"));
 		lblNewLabel.setBounds(113, 192, 76, 61);
 		contentPane.add(lblNewLabel);
 		
@@ -91,8 +92,11 @@ public class ChangeWB extends JFrame {
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setBackground(new Color(186, 85, 211));
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Downloads\\return-button.png"));
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\return-button.png"));
 		btnNewButton_1.setBounds(24, 40, 49, 47);
+		//아이콘 없애기
+		btnNewButton_1.setFocusPainted( false );
+		btnNewButton_1.setBorder(null);
 		contentPane.add(btnNewButton_1);
 		
 		JLabel lblNewLabel_1 = new JLabel("X");
@@ -110,27 +114,27 @@ public class ChangeWB extends JFrame {
 		contentPane.add(lblNewLabel_1);
 		
 		lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\chosun\\Downloads\\clapperboard (1).png"));
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\clapperboard (1).png"));
 		lblNewLabel_2.setBounds(177, 114, 69, 61);
 		contentPane.add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\chosun\\Downloads\\football.png"));
+		lblNewLabel_3.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\football.png"));
 		lblNewLabel_3.setBounds(279, 92, 81, 71);
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("");
-		lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\chosun\\Downloads\\microphone.png"));
+		lblNewLabel_4.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\microphone.png"));
 		lblNewLabel_4.setBounds(372, 114, 81, 71);
 		contentPane.add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("");
-		lblNewLabel_5.setIcon(new ImageIcon("C:\\Users\\chosun\\Downloads\\cards.png"));
+		lblNewLabel_5.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\cards.png"));
 		lblNewLabel_5.setBounds(422, 192, 81, 71);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("");
-		lblNewLabel_6.setIcon(new ImageIcon("C:\\Users\\chosun\\Downloads\\question.png"));
+		lblNewLabel_6.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\question.png"));
 		lblNewLabel_6.setBounds(242, 162, 145, 163);
 		contentPane.add(lblNewLabel_6);
 		

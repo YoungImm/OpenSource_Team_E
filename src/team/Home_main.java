@@ -24,14 +24,15 @@ public class Home_main extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	
-	//Hi
+
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					Home_main frame = new Home_main();
-					frame.setVisible(true);
+					frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+					frame.setVisible(true);				
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -74,35 +75,85 @@ public class Home_main extends JFrame {
 		panel.add(lblNewLabel);
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\JY\\git\\OpenSource_Team_E\\team\\img\\choice.PNG"));
 		
-		//test
 		JLabel lblHome = new JLabel("HOME");
 		lblHome.setForeground(Color.WHITE);
 		lblHome.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 40));
 		lblHome.setBounds(621, 67, 143, 38);
 		panel.add(lblHome);
 		
-		JButton button = new JButton("\uB180\uAC70\uB9AC \uC120\uD0DD");
-		button.setBackground(SystemColor.inactiveCaption);
-		button.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
+
+		
+
+		
+		JButton btn_food = new JButton("\uC74C\uC2DD \uC120\uD0DD");
+		btn_food.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
+		btn_food.setBackground(SystemColor.inactiveCaption);
+		btn_food.setBounds(569, 151, 211, 38);
+		//아이콘 없애기
+		btn_food.setFocusPainted( false );
+		btn_food.setBorder(null);
+		panel.add(btn_food);
+		
+		btn_food.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				//JButton btn_food = (JButton) e.getSource();
+//				JButton btn_play = (JButton) e.getSource();
+//				JButton btn_choose = (JButton) e.getSource();
+//				
+				Food_choice food_Frame = new Food_choice();
+				dispose();
+			}
+			
+		});
+		
+		JButton btn_play = new JButton("\uB180\uAC70\uB9AC \uC120\uD0DD");
+		btn_play.setBackground(SystemColor.inactiveCaption);
+		btn_play.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
+		btn_play.setBounds(569, 262, 211, 38);
+		//아이콘 없애기
+		btn_play.setFocusPainted( false );
+		btn_play.setBorder(null);
+		
+		btn_play.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub					
+				
+				Play_choice play_Frame = new Play_choice();
+				play_Frame.setVisible(true);
+				dispose();
 			}
 		});
-		button.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
-		button.setBounds(569, 262, 211, 38);
-		panel.add(button);
 		
-		JButton button_1 = new JButton("\uC9C1\uC811 \uC120\uD0DD");
-		button_1.setBackground(SystemColor.inactiveCaption);
-		button_1.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
-		button_1.setBounds(569, 366, 211, 38);
-		panel.add(button_1);
+		panel.add(btn_play);
 		
-		JButton button_2 = new JButton("\uC74C\uC2DD \uC120\uD0DD");
-		button_2.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
-		button_2.setBackground(SystemColor.inactiveCaption);
-		button_2.setBounds(569, 151, 211, 38);
-		panel.add(button_2);
+		JButton btn_self = new JButton("\uC9C1\uC811 \uC120\uD0DD");
+		btn_self.setBackground(SystemColor.inactiveCaption);
+		btn_self.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
+		btn_self.setBounds(569, 366, 211, 38);
 		
+		//아이콘 없애기
+		btn_self.setFocusPainted( false );
+		btn_self.setBorder(null);
+		
+		
+		btn_self.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				//JButton btn_food = (JButton) e.getSource();
+//				JButton btn_play = (JButton) e.getSource();
+//				JButton btn_choose = (JButton) e.getSource();
+//				
+				dispose();
+			}			
+		});
+		panel.add(btn_self);
 		
 	}
 }
