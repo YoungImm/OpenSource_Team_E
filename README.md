@@ -31,4 +31,5 @@ Updates
 ### 2018/11/21 #4
 Updates
 * 팀원 3명이 각각 구현한 food_choice + home_main + play_choice 화면을 
+버튼을 누르면 각각 화면으로 
 
