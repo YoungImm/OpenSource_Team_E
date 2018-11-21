@@ -47,7 +47,7 @@ public class Food_choice extends JFrame{
     }
     
     public Food_choice() {
-    	J = new JFrame("음식");    
+    	J = new JFrame("Food");    
         JTabbedPane  jtab = new JTabbedPane();
         
         JPanel panel = new JPanel(); 
@@ -58,7 +58,7 @@ public class Food_choice extends JFrame{
         jp1.setBackground(new Color(0, 102, 153));
         
        
-        jtab.add("밥", jp1);
+        jtab.add("Bap", jp1);
         jp1.setLayout(null);
         
         Button button = new Button("\uC2DC\uC791");
@@ -94,7 +94,7 @@ public class Food_choice extends JFrame{
         jp1.add(btnNewButton);
         JPanel jp2 = new JPanel();
         jp2.setBackground(new Color(0, 102, 153));
-        jtab.add("음료", jp2);
+        jtab.add("Drink", jp2);
         jp2.setLayout(null);
         
         JLabel lblNewLabel_1 = new JLabel("New label");
@@ -124,7 +124,7 @@ public class Food_choice extends JFrame{
         jp2.add(button_2);
         JPanel jp3 = new JPanel();
         jp3.setBackground(new Color(0, 102, 153));
-        jtab.add("디저트", jp3);
+        jtab.add("Dessert", jp3);
         jp3.setLayout(null);
         
         JLabel label = new JLabel("\uC74C\uC2DD\uC774\uB984");
@@ -170,6 +170,6 @@ public class Food_choice extends JFrame{
     
 
  		  
->>>>>>> 0b5067d5713c71174dd29d00d9f7807af23a7642:src/team/food.java
+
     }
 }
