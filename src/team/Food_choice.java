@@ -88,15 +88,10 @@ public class Food_choice extends JFrame{
         lblNewLabel_2.setBounds(309, 431, 52, 15);
         jp1.add(lblNewLabel_2);
         
-        Button button_2 = new Button("\uD648");
-        button_2.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent arg0) {
-        	}
-        });
-        button_2.setFont(new Font("Dialog", Font.BOLD, 19));
-        button_2.setBackground(new Color(0, 102, 153));
-        button_2.setBounds(596, 2, 47, 43);
-        jp1.add(button_2);
+        JButton btnNewButton = new JButton("");
+        btnNewButton.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uD648.png"));
+        btnNewButton.setBounds(594, 0, 52, 52);
+        jp1.add(btnNewButton);
         JPanel jp2 = new JPanel();
         jp2.setBackground(new Color(0, 102, 153));
         jtab.add("음료", jp2);
@@ -123,11 +118,10 @@ public class Food_choice extends JFrame{
         lblNewLabel_3.setBounds(300, 431, 52, 15);
         jp2.add(lblNewLabel_3);
         
-        Button button_5 = new Button("\uD648");
-        button_5.setFont(new Font("Dialog", Font.BOLD, 19));
-        button_5.setBackground(new Color(0, 102, 153));
-        button_5.setBounds(596, 2, 47, 43);
-        jp2.add(button_5);
+        JButton button_2 = new JButton("");
+        button_2.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uD648.png"));
+        button_2.setBounds(594, 0, 52, 52);
+        jp2.add(button_2);
         JPanel jp3 = new JPanel();
         jp3.setBackground(new Color(0, 102, 153));
         jtab.add("디저트", jp3);
@@ -163,7 +157,19 @@ public class Food_choice extends JFrame{
         button_8.setBackground(new Color(0, 102, 153));
         button_8.setBounds(597, 0, 47, 43);
         jp3.add(button_8);
-        J.setVisible(true);        
-    	
+        J.setVisible(true);        	
+
+        JButton button_5 = new JButton("");
+        button_5.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uD648.png"));
+        button_5.setBounds(594, 0, 52, 52);
+        jp3.add(button_5);
+        J.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        J.setVisible(true);
+        
+        
+    
+
+ 		  
+>>>>>>> 0b5067d5713c71174dd29d00d9f7807af23a7642:src/team/food.java
     }
 }
