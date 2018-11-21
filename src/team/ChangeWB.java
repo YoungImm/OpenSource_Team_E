@@ -72,7 +72,7 @@ public class ChangeWB extends JFrame {
 		JButton button = new JButton("\uC815\uC9C0");
 		button.setBackground(new Color(255, 204, 255));
 		button.setForeground(new Color(186, 85, 211));
-		button.setFont(new Font("배달의민족 도현", Font.PLAIN, 27));
+		button.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		button.setBounds(318, 368, 179, 36);
 		contentPane.add(button);
 		
