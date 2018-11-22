@@ -23,6 +23,7 @@ import javax.swing.border.EmptyBorder;
 
 import java.awt.Image;
 import java.awt.SystemColor;
+import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JLabel;
@@ -97,15 +98,16 @@ public class Food_choice extends JFrame{
         btnNewButton.setBounds(594, 0, 52, 52);
         jp1.add(btnNewButton);
     
-         
+        btnNewButton.setFocusPainted( false );
+    	btnNewButton.setBorder(null);
         btnNewButton.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 			
-				Home_main Home_frame = new Home_main();
-				Home_frame.setVisible(true);
-				dispose();
+				Home_main home_frame = new Home_main();
+				home_frame.setVisible(true);
+				J.dispose();
 			}
 			
 		});
@@ -151,7 +153,7 @@ public class Food_choice extends JFrame{
 			
 				Home_main Home_frame = new Home_main();
 				Home_frame.setVisible(true);
-				dispose();
+				J.dispose();
 			}
 			
 		});
@@ -204,7 +206,7 @@ public class Food_choice extends JFrame{
 			
 				Home_main Home_frame = new Home_main();
 				Home_frame.setVisible(true);
-				dispose();
+				J.dispose();
 			}
 			
 		});
