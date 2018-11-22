@@ -76,6 +76,9 @@ public class Food_choice extends JFrame{
         	public void actionPerformed(ActionEvent arg0) {
         	}
         });
+        
+       
+         
         button_1.setBounds(385, 498, 133, 46);
         jp1.add(button_1);
         
@@ -88,15 +91,32 @@ public class Food_choice extends JFrame{
         lblNewLabel_2.setBounds(309, 431, 52, 15);
         jp1.add(lblNewLabel_2);
         
-        JButton btnNewButton = new JButton("");
+        
+        JButton btnNewButton = new JButton("H");
         btnNewButton.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uD648.png"));
         btnNewButton.setBounds(594, 0, 52, 52);
         jp1.add(btnNewButton);
+    
+         
+        btnNewButton.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+			
+				Home_main Home_frame = new Home_main();
+				Home_frame.setVisible(true);
+				dispose();
+			}
+			
+		});
+        
+        
+         
         JPanel jp2 = new JPanel();
         jp2.setBackground(new Color(0, 102, 153));
         jtab.add("Drink", jp2);
         jp2.setLayout(null);
-        
+
         JLabel lblNewLabel_1 = new JLabel("New label");
         lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\drink.jpg"));
         lblNewLabel_1.setBounds(139, 69, 367, 322);
@@ -118,10 +138,26 @@ public class Food_choice extends JFrame{
         lblNewLabel_3.setBounds(300, 431, 52, 15);
         jp2.add(lblNewLabel_3);
         
-        JButton button_2 = new JButton("");
+        JButton button_2 = new JButton("H");
         button_2.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uD648.png"));
         button_2.setBounds(594, 0, 52, 52);
         jp2.add(button_2);
+        
+        
+        button_2.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+			
+				Home_main Home_frame = new Home_main();
+				Home_frame.setVisible(true);
+				dispose();
+			}
+			
+		});
+        
+        
+        
         JPanel jp3 = new JPanel();
         jp3.setBackground(new Color(0, 102, 153));
         jtab.add("Dessert", jp3);
@@ -152,20 +188,26 @@ public class Food_choice extends JFrame{
         button_7.setBounds(383, 498, 132, 45);
         jp3.add(button_7);
         
-        Button button_8 = new Button("\uD648");
-        button_8.setFont(new Font("Dialog", Font.BOLD, 19));
-        button_8.setBackground(new Color(0, 102, 153));
-        button_8.setBounds(597, 0, 47, 43);
-        jp3.add(button_8);
-        J.setVisible(true);        	
+             	
 
-        JButton button_5 = new JButton("");
+        JButton button_5 = new JButton("H");
         button_5.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uD648.png"));
         button_5.setBounds(594, 0, 52, 52);
         jp3.add(button_5);
         J.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         J.setVisible(true);
         
+        button_5.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+			
+				Home_main Home_frame = new Home_main();
+				Home_frame.setVisible(true);
+				dispose();
+			}
+			
+		});
         
     
 
