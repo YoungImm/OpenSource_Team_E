@@ -69,7 +69,7 @@ public class Food_choice extends JFrame{
         button.setBounds(139, 498, 133, 45);
         jp1.add(button);
         
-        Button button_1 = new Button("\uBA48\uCDA4");
+        Button button_1 = new Button("\uC815\uC9C0");
         button_1.setFont(new Font("Myriad Pro SemiExt", Font.BOLD, 16));
         button_1.setForeground(new Color(0, 0, 0));
         button_1.setBackground(new Color(240, 128, 128));
@@ -130,7 +130,7 @@ public class Food_choice extends JFrame{
         button_3.setBounds(138, 497, 132, 46);
         jp2.add(button_3);
         
-        Button button_4 = new Button("\uBA48\uCDA4");
+        Button button_4 = new Button("\uC815\uC9C0");
         button_4.setFont(new Font("Dialog", Font.BOLD, 16));
         button_4.setBackground(new Color(240, 128, 128));
         button_4.setBounds(387, 498, 132, 45);
@@ -180,7 +180,7 @@ public class Food_choice extends JFrame{
         button_6.setBounds(135, 498, 132, 46);
         jp3.add(button_6);
         
-        Button button_7 = new Button("\uBA48\uCDA4");
+        Button button_7 = new Button("\uC815\uC9C0");
         button_7.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent arg0) {
         	}
