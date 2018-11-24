@@ -83,8 +83,8 @@ public class Food_choice extends JFrame{
         button_1.setBounds(385, 498, 133, 46);
         jp1.add(button_1);
         
-        JLabel lblNewLabel = new JLabel("New label");
-        lblNewLabel.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\food.jpg"));
+        JLabel lblNewLabel = new JLabel("");
+        lblNewLabel.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\food.jpg"));
         lblNewLabel.setBounds(137, 66, 369, 321);
         jp1.add(lblNewLabel);
         
@@ -93,8 +93,8 @@ public class Food_choice extends JFrame{
         jp1.add(lblNewLabel_2);
         
         
-        JButton btnNewButton = new JButton("H");
-        btnNewButton.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uD648.png"));
+        JButton btnNewButton = new JButton("");
+        btnNewButton.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\home_icon.png"));
         btnNewButton.setBounds(594, 0, 52, 52);
         jp1.add(btnNewButton);
     
@@ -119,8 +119,8 @@ public class Food_choice extends JFrame{
         jtab.add("Drink", jp2);
         jp2.setLayout(null);
 
-        JLabel lblNewLabel_1 = new JLabel("New label");
-        lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\drink.jpg"));
+        JLabel lblNewLabel_1 = new JLabel("");
+        lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\drink.jpg"));
         lblNewLabel_1.setBounds(139, 69, 367, 322);
         jp2.add(lblNewLabel_1);
         
@@ -140,8 +140,8 @@ public class Food_choice extends JFrame{
         lblNewLabel_3.setBounds(300, 431, 52, 15);
         jp2.add(lblNewLabel_3);
         
-        JButton button_2 = new JButton("H");
-        button_2.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uD648.png"));
+        JButton button_2 = new JButton("");
+        button_2.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\home_icon.png"));
         button_2.setBounds(594, 0, 52, 52);
         jp2.add(button_2);
         
@@ -170,7 +170,7 @@ public class Food_choice extends JFrame{
         jp3.add(label);
         
         JLabel label_1 = new JLabel("New label");
-        label_1.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\dessert.jpg"));
+        label_1.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\Dessert.jpg"));
         label_1.setBounds(136, 68, 367, 322);
         jp3.add(label_1);
         
@@ -192,8 +192,8 @@ public class Food_choice extends JFrame{
         
              	
 
-        JButton button_5 = new JButton("H");
-        button_5.setIcon(new ImageIcon("C:\\Users\\samsung\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\\uC74C\uC2DD\\\uBC25\\\uD648.png"));
+        JButton button_5 = new JButton("");
+        button_5.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\home_icon.png"));
         button_5.setBounds(594, 0, 52, 52);
         jp3.add(button_5);
         J.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
