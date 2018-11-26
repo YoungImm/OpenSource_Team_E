@@ -32,3 +32,8 @@ Updates
 Updates
 * 팀원 3명이 각각 구현한 food_choice + home_main + play_choice 화면을 버튼을 누르면 각각 화면으로 이동
 
+### 2018/11/26 #5
+Updates
+* 놀거리선택 화면 난수를 생성해서 랜덤음식이 보이게 설정
+* 음식, 놀거리 이미지 업
+
