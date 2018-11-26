@@ -1,5 +1,6 @@
 package team;
 import java.awt.BorderLayout;
+import java.util.Random;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -34,6 +35,16 @@ public class Play_choice extends JFrame {
 
 	private JPanel contentPane;
 	private JLabel lblNewLabel_2;
+	public boolean flag = false;
+	public ImageIcon img[] = {
+			new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\0.png"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\1.png"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\2.png"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\3.png"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\4.png"),
+            //new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\return-button.png")
+
+	};
 
 	/**
 	 * Launch the application.
@@ -43,7 +54,7 @@ public class Play_choice extends JFrame {
 			public void run() {
 				try {
 					Play_choice frame = new Play_choice();
-					frame.setVisible(true);
+					//frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -55,6 +66,7 @@ public class Play_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Play_choice() {
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 603, 440);
 		contentPane = new JPanel();
@@ -71,6 +83,7 @@ public class Play_choice extends JFrame {
 		btnNewButton.setBounds(99, 368, 179, 36);
 		contentPane.add(btnNewButton);
 		
+	
 		JButton button = new JButton("\uC815\uC9C0");
 		button.setBackground(new Color(255, 204, 255));
 		button.setForeground(new Color(186, 85, 211));
@@ -108,6 +121,8 @@ public class Play_choice extends JFrame {
 				dispose();
 			}
 		});
+		
+		
 		
 		JLabel lblNewLabel_1 = new JLabel("X");
 		lblNewLabel_1.addMouseListener(new MouseAdapter() {
@@ -148,7 +163,51 @@ public class Play_choice extends JFrame {
 		lblNewLabel_6.setBounds(242, 162, 145, 163);
 		contentPane.add(lblNewLabel_6);
 		
+		
+		
+		btnNewButton.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {				
+				
+				new Thread() {
+					public void run() {
+						while(flag) {
+							button.requestFocus();
+							int random_num = (int)(Math.random() * 4);				
+							lblNewLabel_6.setIcon(img[random_num]);
+							lblNewLabel_6.revalidate();
+							lblNewLabel_6.repaint();
+							lblNewLabel_6.update(lblNewLabel_6.getGraphics());
+							try {
+								Thread.sleep(100);
+							} catch (InterruptedException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+						}
+					}
+				}.start();				
+				flag = true;				
+			}
+		});
+		
+		button.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {		
+				flag = false;	
+				
+			}
+		});
+		
+		
+		
+		
 		setUndecorated(true);
+		setVisible(true);
 	
 	}
+	
+	
 }
