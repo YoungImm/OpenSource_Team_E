@@ -64,7 +64,7 @@ public class Home_main extends JFrame {
 		panel.setLayout(null);
 		 
 		JLabel lblNewLabel_1 = new JLabel("\uACB0\uC815\uC7A5\uC560 \uD574\uACB0 \uD504\uB85C\uADF8\uB7A8");
-		lblNewLabel_1.setBounds(121, 483, 265, 38);
+		lblNewLabel_1.setBounds(121, 483, 297, 38);
 		lblNewLabel_1.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
 		lblNewLabel_1.setForeground(Color.WHITE);
 		panel.add(lblNewLabel_1);
@@ -104,6 +104,7 @@ public class Home_main extends JFrame {
 //				JButton btn_choose = (JButton) e.getSource();
 //				
 				Food_choice food_Frame = new Food_choice();
+				food_Frame.setVisible(true);
 				dispose();
 			}
 			
@@ -146,6 +147,9 @@ public class Home_main extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
+				
+				Self_choice selfFrame = new Self_choice();
+				selfFrame.setVisible(true);
 				//JButton btn_food = (JButton) e.getSource();
 //				JButton btn_play = (JButton) e.getSource();
 //				JButton btn_choose = (JButton) e.getSource();
