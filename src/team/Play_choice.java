@@ -34,6 +34,7 @@ import java.awt.event.MouseEvent;
 public class Play_choice extends JFrame {
 
 	private JPanel contentPane;
+<<<<<<< HEAD
 	private JLabel lblNewLabel_2;
 	public boolean flag = false;
 	public ImageIcon img[] = {
@@ -45,6 +46,8 @@ public class Play_choice extends JFrame {
             //new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\return-button.png")
 
 	};
+=======
+>>>>>>> 11f999ad2b58e8d52dfa082566a745673584f498
 
 	/**
 	 * Launch the application.
@@ -80,7 +83,7 @@ public class Play_choice extends JFrame {
 		btnNewButton.setBackground(new Color(230, 230, 250));
 		btnNewButton.setForeground(new Color(106, 90, 205));
 		btnNewButton.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
-		btnNewButton.setBounds(99, 368, 179, 36);
+		btnNewButton.setBounds(102, 336, 179, 36);
 		contentPane.add(btnNewButton);
 		
 	
@@ -88,25 +91,20 @@ public class Play_choice extends JFrame {
 		button.setBackground(new Color(255, 204, 255));
 		button.setForeground(new Color(186, 85, 211));
 		button.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
-		button.setBounds(327, 368, 179, 36);
+		button.setBounds(330, 336, 179, 36);
 		contentPane.add(button);
-		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\videogame (1).png"));
-		lblNewLabel.setBounds(113, 192, 76, 61);
-		contentPane.add(lblNewLabel);
 		
 		JLabel label = new JLabel("\uB180\uAC70\uB9AC");
 		label.setBackground(new Color(255, 255, 255));
 		label.setForeground(new Color(255, 240, 245));
 		label.setFont(new Font("배달의민족 주아", Font.PLAIN, 18));
-		label.setBounds(279, 335, 57, 15);
+		label.setBounds(276, 298, 57, 15);
 		contentPane.add(label);
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setBackground(new Color(186, 85, 211));
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\return-button.png"));
-		btnNewButton_1.setBounds(24, 40, 49, 47);
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Desktop\\return-button.png"));
+		btnNewButton_1.setBounds(24, 23, 49, 47);
 		//아이콘 없애기
 		btnNewButton_1.setFocusPainted( false );
 		btnNewButton_1.setBorder(null);
@@ -122,6 +120,7 @@ public class Play_choice extends JFrame {
 			}
 		});
 		
+<<<<<<< HEAD
 		
 		
 		JLabel lblNewLabel_1 = new JLabel("X");
@@ -206,6 +205,13 @@ public class Play_choice extends JFrame {
 		
 		setUndecorated(true);
 		setVisible(true);
+=======
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\chosun\\Desktop\\play.PNG"));
+		lblNewLabel.setBounds(85, 47, 407, 241);
+		contentPane.add(lblNewLabel);
+		
+>>>>>>> 11f999ad2b58e8d52dfa082566a745673584f498
 	
 	}
 	
