@@ -112,7 +112,7 @@ public class Play_choice extends JFrame {
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setBackground(new Color(186, 85, 211));
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\return-button.png"));
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
 		btnNewButton_1.setBounds(24, 23, 49, 47);
 		//아이콘 없애기
 		btnNewButton_1.setFocusPainted( false );
@@ -130,7 +130,7 @@ public class Play_choice extends JFrame {
 		});
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\play.PNG"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\play.PNG"));
 		lblNewLabel.setBounds(87, 45, 407, 241);
 		contentPane.add(lblNewLabel);
 		

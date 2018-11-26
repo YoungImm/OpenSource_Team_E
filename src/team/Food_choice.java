@@ -32,6 +32,8 @@ import javax.swing.ImageIcon;
 public class Food_choice extends JFrame{
 		
     static JFrame J;
+    private JButton homebutton3;
+   
     
     public static void main(String[] args) {
         
@@ -84,7 +86,7 @@ public class Food_choice extends JFrame{
         jp1.add(button_1);
         
         JLabel lblNewLabel = new JLabel("");
-        lblNewLabel.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\food.jpg"));
+        lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\food.jpg"));
         lblNewLabel.setBounds(137, 66, 369, 321);
         jp1.add(lblNewLabel);
         
@@ -93,23 +95,23 @@ public class Food_choice extends JFrame{
         jp1.add(lblNewLabel_2);
         
         
-        JButton btnNewButton = new JButton("");
-        btnNewButton.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\home_icon.png"));
-        btnNewButton.setBounds(594, 0, 52, 52);
-        jp1.add(btnNewButton);
-    
-        btnNewButton.setFocusPainted( false );
-    	btnNewButton.setBorder(null);
-        btnNewButton.addActionListener(new ActionListener(){
+        JButton homebutton3 = new JButton("");
+        homebutton3.setBackground(new Color(186, 85, 211));
+        homebutton3.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+        homebutton3.setBounds(24, 23, 49, 47);
+		//아이콘 없애기
+        homebutton3.setFocusPainted( false );
+        homebutton3.setBorder(null);
+		jp1.add(homebutton3);
+		
+		homebutton3.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-			
 				Home_main home_frame = new Home_main();
 				home_frame.setVisible(true);
-				J.dispose();
+				dispose();
 			}
-			
 		});
         
         
@@ -120,7 +122,7 @@ public class Food_choice extends JFrame{
         jp2.setLayout(null);
 
         JLabel lblNewLabel_1 = new JLabel("");
-        lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\drink.jpg"));
+        lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\drink.jpg"));
         lblNewLabel_1.setBounds(139, 69, 367, 322);
         jp2.add(lblNewLabel_1);
         
@@ -140,22 +142,23 @@ public class Food_choice extends JFrame{
         lblNewLabel_3.setBounds(300, 431, 52, 15);
         jp2.add(lblNewLabel_3);
         
-        JButton button_2 = new JButton("");
-        button_2.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\home_icon.png"));
-        button_2.setBounds(594, 0, 52, 52);
-        jp2.add(button_2);
-        
-        
-        button_2.addActionListener(new ActionListener(){
+        JButton homebutton2 = new JButton("");
+        homebutton2.setBackground(new Color(186, 85, 211));
+        homebutton2.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+        homebutton2.setBounds(24, 23, 49, 47);
+		//아이콘 없애기
+        homebutton2.setFocusPainted( false );
+        homebutton2.setBorder(null);
+		jp2.add(homebutton2);
+		
+		homebutton2.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-			
-				Home_main Home_frame = new Home_main();
-				Home_frame.setVisible(true);
-				J.dispose();
+				Home_main home_frame = new Home_main();
+				home_frame.setVisible(true);
+				dispose();
 			}
-			
 		});
         
         
@@ -169,8 +172,8 @@ public class Food_choice extends JFrame{
         label.setBounds(304, 424, 52, 15);
         jp3.add(label);
         
-        JLabel label_1 = new JLabel("New label");
-        label_1.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\Dessert.jpg"));
+        JLabel label_1 = new JLabel("");
+        label_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\dessert.jpg"));
         label_1.setBounds(136, 68, 367, 322);
         jp3.add(label_1);
         
@@ -192,23 +195,23 @@ public class Food_choice extends JFrame{
         
              	
 
-        JButton button_5 = new JButton("");
-        button_5.setIcon(new ImageIcon("C:\\Users\\samsung\\Desktop\\\uC624\uD508\uC18C\uC2A4\\img\\home_icon.png"));
-        button_5.setBounds(594, 0, 52, 52);
-        jp3.add(button_5);
-        J.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        J.setVisible(true);
-        
-        button_5.addActionListener(new ActionListener(){
+        JButton homebutton = new JButton("");
+        homebutton.setBackground(new Color(186, 85, 211));
+        homebutton.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+        homebutton.setBounds(24, 23, 49, 47);
+		//아이콘 없애기
+        homebutton.setFocusPainted( false );
+        homebutton.setBorder(null);
+		jp3.add(homebutton);
+		
+		homebutton.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-			
-				Home_main Home_frame = new Home_main();
-				Home_frame.setVisible(true);
-				J.dispose();
+				Home_main home_frame = new Home_main();
+				home_frame.setVisible(true);
+				dispose();
 			}
-			
 		});
         
     
