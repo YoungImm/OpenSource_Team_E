@@ -1,110 +1,114 @@
 package team;
 import java.awt.BorderLayout;
+import java.util.Random;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.JTextField;
 import java.awt.Color;
-import java.awt.Button;
-
-
+import javax.swing.JTextField;
+import javax.swing.JTextPane;
+import javax.swing.JTextArea;
+import javax.swing.JEditorPane;
 import java.awt.Font;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JTabbedPane;
-import javax.swing.border.EmptyBorder;
-
-import java.awt.Image;
-import java.awt.SystemColor;
-import java.awt.Window;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.Label;
+import java.awt.Button;
+import javax.swing.JSlider;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
- 
-public class Food_choice extends JFrame{
-		
-    static JFrame J;
-    private JButton homebutton3;
-   
-    
-    public static void main(String[] args) {
-        
-    	EventQueue.invokeLater(new Runnable() {
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+import java.awt.Choice;
+import java.awt.List;
+import javax.swing.JSpinner;
+import javax.swing.JList;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
+import java.awt.Cursor;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JTabbedPane;
+import java.awt.Component;
+
+public class Food_choice extends JFrame {
+
+	private JPanel contentPane;
+	public Thread looper;
+	public boolean flag = true;
+	public ImageIcon img[] = {
+			new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Baeksuk.jpg"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Cake.jpg"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Chicken.jpg"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Dak-bokkeum-tang.png"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Jokbal.jpg"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Bossam.png"),
+            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Caramel Macchiato.png"),
+            //new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\4.png"),
+            //new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\return-button.png")
+
+	};
+	public String img_name[] = {
+			"백숙",
+			"케이크",
+			"치킨",
+			"닭볶음탕",
+			"족발",
+			"보쌈",
+			"카라멜 마끼야또"
+	};
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					Food_choice frame = new Food_choice();
+					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
-		});  
- 		  
-    }
-    
-    public Food_choice() {
-    	J = new JFrame("Food");    
-        JTabbedPane  jtab = new JTabbedPane();
-        
-        JPanel panel = new JPanel(); 
-        J.setLocation(550,200);
-        J.setSize(665,641);
-        J.getContentPane().add("Center",jtab);
-        JPanel jp1 = new JPanel();
-        jp1.setBackground(new Color(0, 102, 153));
-        
-       
-        jtab.add("Bap", jp1);
-        jp1.setLayout(null);
-        
-        Button button = new Button("\uC2DC\uC791");
-        button.setFont(new Font("Myriad Pro SemiExt", Font.BOLD, 16));
-        button.setForeground(new Color(0, 0, 0));
-        button.setBackground(new Color(100, 149, 237));
-        button.setBounds(139, 498, 133, 45);
-        jp1.add(button);
-        
-        Button button_1 = new Button("\uC815\uC9C0");
-        button_1.setFont(new Font("Myriad Pro SemiExt", Font.BOLD, 16));
-        button_1.setForeground(new Color(0, 0, 0));
-        button_1.setBackground(new Color(240, 128, 128));
-        button_1.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent arg0) {
-        	}
-        });
-        
-       
-         
-        button_1.setBounds(385, 498, 133, 46);
-        jp1.add(button_1);
-        
-        JLabel lblNewLabel = new JLabel("");
-        lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\food.jpg"));
-        lblNewLabel.setBounds(137, 66, 369, 321);
-        jp1.add(lblNewLabel);
-        
-        JLabel lblNewLabel_2 = new JLabel("\uC74C\uC2DD\uC774\uB984");
-        lblNewLabel_2.setBounds(309, 431, 52, 15);
-        jp1.add(lblNewLabel_2);
-        
-        
-        JButton homebutton3 = new JButton("");
-        homebutton3.setBackground(new Color(186, 85, 211));
-        homebutton3.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
-        homebutton3.setBounds(24, 23, 49, 47);
-		//아이콘 없애기
-        homebutton3.setFocusPainted( false );
-        homebutton3.setBorder(null);
-		jp1.add(homebutton3);
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Food_choice() {
 		
-		homebutton3.addActionListener(new ActionListener(){
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 608, 471);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(204, 204, 255));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		tabbedPane.setBounds(0, 0, 592, 432);
+		tabbedPane.setBackground(new Color(255, 182, 193));
+		contentPane.add(tabbedPane);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(173, 216, 230));
+		tabbedPane.addTab("New tab", null, panel, null);
+		panel.setLayout(null);
+		
+		JButton btnNewButton_1 = new JButton("");
+		btnNewButton_1.setBounds(12, 10, 49, 47);
+		panel.add(btnNewButton_1);
+		btnNewButton_1.setBackground(new Color(173, 216, 230));
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		//아이콘 없애기
+		btnNewButton_1.setFocusPainted( false );
+		btnNewButton_1.setBorder(null);
+		
+		btnNewButton_1.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -113,45 +117,22 @@ public class Food_choice extends JFrame{
 				dispose();
 			}
 		});
-        
-        
-         
-        JPanel jp2 = new JPanel();
-        jp2.setBackground(new Color(0, 102, 153));
-        jtab.add("Drink", jp2);
-        jp2.setLayout(null);
-
-        JLabel lblNewLabel_1 = new JLabel("");
-        lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\drink.jpg"));
-        lblNewLabel_1.setBounds(139, 69, 367, 322);
-        jp2.add(lblNewLabel_1);
-        
-        Button button_3 = new Button("\uC2DC\uC791");
-        button_3.setFont(new Font("Dialog", Font.BOLD, 16));
-        button_3.setBackground(new Color(100, 149, 237));
-        button_3.setBounds(138, 497, 132, 46);
-        jp2.add(button_3);
-        
-        Button button_4 = new Button("\uC815\uC9C0");
-        button_4.setFont(new Font("Dialog", Font.BOLD, 16));
-        button_4.setBackground(new Color(240, 128, 128));
-        button_4.setBounds(387, 498, 132, 45);
-        jp2.add(button_4);
-        
-        JLabel lblNewLabel_3 = new JLabel("\uC74C\uC2DD\uC774\uB984");
-        lblNewLabel_3.setBounds(300, 431, 52, 15);
-        jp2.add(lblNewLabel_3);
-        
-        JButton homebutton2 = new JButton("");
-        homebutton2.setBackground(new Color(186, 85, 211));
-        homebutton2.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
-        homebutton2.setBounds(24, 23, 49, 47);
-		//아이콘 없애기
-        homebutton2.setFocusPainted( false );
-        homebutton2.setBorder(null);
-		jp2.add(homebutton2);
 		
-		homebutton2.addActionListener(new ActionListener(){
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(255, 192, 203));
+		tabbedPane.addTab("New tab", null, panel_1, null);
+		panel_1.setLayout(null);
+		
+		JButton btnNewButton_2 = new JButton("");
+		btnNewButton_2.setBounds(12, 10, 49, 47);
+		panel_1.add(btnNewButton_2);
+		btnNewButton_2.setBackground(new Color(255, 192, 203));
+		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		//아이콘 없애기
+		btnNewButton_2.setFocusPainted( false );
+		btnNewButton_2.setBorder(null);
+		
+		btnNewButton_2.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -160,51 +141,22 @@ public class Food_choice extends JFrame{
 				dispose();
 			}
 		});
-        
-        
-        
-        JPanel jp3 = new JPanel();
-        jp3.setBackground(new Color(0, 102, 153));
-        jtab.add("Dessert", jp3);
-        jp3.setLayout(null);
-        
-        JLabel label = new JLabel("\uC74C\uC2DD\uC774\uB984");
-        label.setBounds(304, 424, 52, 15);
-        jp3.add(label);
-        
-        JLabel label_1 = new JLabel("");
-        label_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\dessert.jpg"));
-        label_1.setBounds(136, 68, 367, 322);
-        jp3.add(label_1);
-        
-        Button button_6 = new Button("\uC2DC\uC791");
-        button_6.setFont(new Font("Dialog", Font.BOLD, 16));
-        button_6.setBackground(new Color(100, 149, 237));
-        button_6.setBounds(135, 498, 132, 46);
-        jp3.add(button_6);
-        
-        Button button_7 = new Button("\uC815\uC9C0");
-        button_7.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent arg0) {
-        	}
-        });
-        button_7.setFont(new Font("Dialog", Font.BOLD, 16));
-        button_7.setBackground(new Color(240, 128, 128));
-        button_7.setBounds(383, 498, 132, 45);
-        jp3.add(button_7);
-        
-             	
-
-        JButton homebutton = new JButton("");
-        homebutton.setBackground(new Color(186, 85, 211));
-        homebutton.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
-        homebutton.setBounds(24, 23, 49, 47);
-		//아이콘 없애기
-        homebutton.setFocusPainted( false );
-        homebutton.setBorder(null);
-		jp3.add(homebutton);
 		
-		homebutton.addActionListener(new ActionListener(){
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(new Color(221, 160, 221));
+		tabbedPane.addTab("New tab", null, panel_2, null);
+		panel_2.setLayout(null);
+		
+		JButton btnNewButton_3 = new JButton("");
+		btnNewButton_3.setBounds(12, 10, 49, 47);
+		panel_2.add(btnNewButton_3);
+		btnNewButton_3.setBackground(new Color(221, 160, 221));
+		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		//아이콘 없애기
+		btnNewButton_3.setFocusPainted( false );
+		btnNewButton_3.setBorder(null);
+		
+		btnNewButton_3.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -213,10 +165,8 @@ public class Food_choice extends JFrame{
 				dispose();
 			}
 		});
-        
-    
-
- 		  
-
-    }
+		setLocation(550,200);
+		
+		//setUndecorated(true);
+	}
 }
