@@ -128,7 +128,7 @@ public class Food_choice extends JFrame {
 		button1.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
 		JLabel label1 = new JLabel("\uC2DD\uC0AC\uC885\uB958");
-		label1.setBounds(242, 303, 102, 26);
+		label1.setBounds(255, 298, 102, 26);
 		panel_1.add(label1);
 		label1.setBackground(new Color(176, 224, 230));
 		label1.setForeground(new Color(199, 21, 133));
@@ -136,7 +136,7 @@ public class Food_choice extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ybail\\Desktop\\meal.PNG"));
-		lblNewLabel.setBounds(103, 65, 375, 239);
+		lblNewLabel.setBounds(103, 61, 375, 239);
 		panel_1.add(lblNewLabel);
 		
 		btnNewButton_2.addActionListener(new ActionListener(){

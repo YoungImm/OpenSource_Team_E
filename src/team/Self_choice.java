@@ -17,6 +17,7 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import java.awt.Color;
+import java.awt.Label;
 
 public class Self_choice extends JFrame {
 
@@ -117,6 +118,11 @@ public class Self_choice extends JFrame {
 		btnNewButton_1.setBorder(null);
 		contentPane.add(btnNewButton_1);
 		
+		Label label_1 = new Label("\uC9C1\uC811 \uC785\uB825\uD558\uC138\uC694");
+		label_1.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 19));
+		label_1.setBounds(223, 23, 310, 57);
+		contentPane.add(label_1);
+		
 		btnNewButton_1.addActionListener(new ActionListener(){
 			
 			@Override
@@ -130,5 +136,4 @@ public class Self_choice extends JFrame {
 		
 		
 	}
-
 }
