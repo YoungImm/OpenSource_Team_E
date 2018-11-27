@@ -163,10 +163,15 @@ public class Food_choice extends JFrame {
 		btnNewButton_3.setFocusPainted( false );
 		btnNewButton_3.setBorder(null);
 		
-		JLabel lblNewLabel1 = new JLabel("");
-		lblNewLabel1.setIcon(new ImageIcon("C:\\Users\\ybail\\Downloads\\question (2).png"));
-		lblNewLabel1.setBounds(226, 127, 143, 181);
-		panel_2.add(lblNewLabel1);
+		btnNewButton_3.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Home_main home_frame = new Home_main();
+				home_frame.setVisible(true);
+				dispose();
+			}
+		});
 		
 		JButton btnNewButton2 = new JButton("\uC2DC\uC791");
 		btnNewButton2.setBounds(80, 333, 179, 36);
@@ -187,12 +192,17 @@ public class Food_choice extends JFrame {
 		button2.setForeground(new Color(186, 85, 211));
 		button2.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
-		JLabel label2 = new JLabel("\uB9C8\uC2E4\uAC70\uB9AC");
-		label2.setBounds(242, 302, 106, 26);
+		JLabel label2 = new JLabel("\uB9C8\uC2E4\uAC83");
+		label2.setBounds(255, 297, 81, 26);
 		panel_2.add(label2);
 		label2.setBackground(new Color(176, 224, 230));
 		label2.setForeground(new Color(139, 0, 139));
 		label2.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Desktop\\drink.PNG"));
+		lblNewLabel_1.setBounds(83, 56, 418, 241);
+		panel_2.add(lblNewLabel_1);
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(173, 216, 230));
@@ -227,7 +237,7 @@ public class Food_choice extends JFrame {
 		button.setForeground(new Color(186, 85, 211));
 		button.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
-		JLabel label = new JLabel("\uB180\uAC70\uB9AC");
+		JLabel label = new JLabel("\uB514\uC800\uD2B8");
 		label.setBounds(257, 302, 72, 26);
 		panel.add(label);
 		label.setBackground(new Color(176, 224, 230));
@@ -250,6 +260,11 @@ public class Food_choice extends JFrame {
 		btnNewButton.setForeground(new Color(106, 90, 205));
 		btnNewButton.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
+		JLabel lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\ybail\\Desktop\\dessert.PNG"));
+		lblNewLabel_2.setBounds(94, 67, 426, 218);
+		panel.add(lblNewLabel_2);
+		
 		btnNewButton_1.addActionListener(new ActionListener(){
 			
 			@Override
@@ -259,11 +274,6 @@ public class Food_choice extends JFrame {
 				dispose();
 			}
 		});
-		
-		JLabel lblNewLabel3 = new JLabel("");
-		lblNewLabel3.setIcon(new ImageIcon("C:\\Users\\ybail\\Downloads\\question (2).png"));
-		lblNewLabel3.setBounds(226, 127, 143, 181);
-		panel.add(lblNewLabel3);
 		
 		
 		setLocation(550,200);
