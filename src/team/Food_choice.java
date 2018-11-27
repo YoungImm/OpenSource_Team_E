@@ -108,6 +108,32 @@ public class Food_choice extends JFrame {
 		btnNewButton_1.setFocusPainted( false );
 		btnNewButton_1.setBorder(null);
 		
+		JButton btnNewButton = new JButton("\uC2DC\uC791");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnNewButton.setBounds(80, 333, 179, 36);
+		panel.add(btnNewButton);
+		btnNewButton.setBackground(new Color(230, 230, 250));
+		btnNewButton.setForeground(new Color(106, 90, 205));
+		btnNewButton.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+	
+		JButton button = new JButton("\uC815\uC9C0");
+		button.setBounds(329, 333, 179, 36);
+		panel.add(button);
+		button.setBackground(new Color(255, 204, 255));
+		button.setForeground(new Color(186, 85, 211));
+		button.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+		JLabel label = new JLabel("\uB180\uAC70\uB9AC");
+		label.setBounds(257, 302, 72, 26);
+		panel.add(label);
+		label.setBackground(new Color(176, 224, 230));
+		label.setForeground(new Color(65, 105, 225));
+		label.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
+		
 		btnNewButton_1.addActionListener(new ActionListener(){
 			
 			@Override
@@ -123,6 +149,17 @@ public class Food_choice extends JFrame {
 		tabbedPane.addTab("New tab", null, panel_1, null);
 		panel_1.setLayout(null);
 		
+		JButton btnNewButton1 = new JButton("\uC2DC\uC791");
+		btnNewButton1.setBounds(80, 333, 179, 36);
+		panel_1.add(btnNewButton1);
+		btnNewButton1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnNewButton1.setBackground(new Color(230, 230, 250));
+		btnNewButton1.setForeground(new Color(106, 90, 205));
+		btnNewButton1.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
 		JButton btnNewButton_2 = new JButton("");
 		btnNewButton_2.setBounds(12, 10, 49, 47);
 		panel_1.add(btnNewButton_2);
@@ -132,7 +169,38 @@ public class Food_choice extends JFrame {
 		btnNewButton_2.setFocusPainted( false );
 		btnNewButton_2.setBorder(null);
 		
+	
+		JButton button1 = new JButton("\uC815\uC9C0");
+		button1.setBounds(329, 333, 179, 36);
+		panel_1.add(button1);
+		button1.setBackground(new Color(255, 204, 255));
+		button1.setForeground(new Color(186, 85, 211));
+		button1.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+		JLabel label1 = new JLabel("\uB180\uAC70\uB9AC");
+		label1.setBounds(257, 302, 72, 26);
+		panel_1.add(label1);
+		label1.setBackground(new Color(176, 224, 230));
+		label1.setForeground(new Color(199, 21, 133));
+		label1.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
+		
 		btnNewButton_2.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Home_main home_frame = new Home_main();
+				home_frame.setVisible(true);
+				dispose();
+			}
+		});
+		
+		btnNewButton.setBounds(80, 333, 179, 36);
+		panel.add(btnNewButton);
+		btnNewButton.setBackground(new Color(230, 230, 250));
+		btnNewButton.setForeground(new Color(106, 90, 205));
+		btnNewButton.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+		btnNewButton_1.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -155,6 +223,32 @@ public class Food_choice extends JFrame {
 		//아이콘 없애기
 		btnNewButton_3.setFocusPainted( false );
 		btnNewButton_3.setBorder(null);
+		
+		JButton btnNewButton2 = new JButton("\uC2DC\uC791");
+		btnNewButton2.setBounds(80, 333, 179, 36);
+		panel_2.add(btnNewButton2);
+		btnNewButton2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnNewButton2.setBackground(new Color(230, 230, 250));
+		btnNewButton2.setForeground(new Color(106, 90, 205));
+		btnNewButton2.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+	
+		JButton button2 = new JButton("\uC815\uC9C0");
+		button2.setBounds(329, 333, 179, 36);
+		panel_2.add(button2);
+		button2.setBackground(new Color(255, 204, 255));
+		button2.setForeground(new Color(186, 85, 211));
+		button2.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+		JLabel label2 = new JLabel("\uB180\uAC70\uB9AC");
+		label2.setBounds(257, 302, 72, 26);
+		panel_2.add(label2);
+		label2.setBackground(new Color(176, 224, 230));
+		label2.setForeground(new Color(139, 0, 139));
+		label2.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
 		
 		btnNewButton_3.addActionListener(new ActionListener(){
 			
