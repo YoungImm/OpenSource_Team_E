@@ -70,10 +70,10 @@ public class Home_main extends JFrame {
 		panel.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setBounds(0, 0, 499, 460);
+		lblNewLabel.setBounds(121, 151, 287, 268);
 		lblNewLabel.setVerticalAlignment(SwingConstants.TOP);
 		panel.add(lblNewLabel);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\choice.PNG"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ybail\\Downloads\\help.png"));
 		
 		JLabel lblHome = new JLabel("HOME");
 		lblHome.setForeground(Color.WHITE);
