@@ -39,42 +39,36 @@ public class Food_choice extends JFrame {
 	public Thread looper;
 	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
 	public boolean flag = true;
-	public ImageIcon dessert_img[] = new ImageIcon[7];
-	public ImageIcon drink_img[]= new ImageIcon[7];
-	public ImageIcon food_img[]= new ImageIcon[10];
+	public ImageIcon dessert_img[] = new ImageIcon[6];
+	public ImageIcon drink_img[]= new ImageIcon[6];
+	public ImageIcon food_img[]= new ImageIcon[6];
 	public String dessert_name[] = {
-			"케이크",
+			
 			"아이스크림",
-			"쿠키",
-			"머랭쿠키",
-			"컵케이크",
-			"팬케잌",
 			"푸딩",
-			"떡"
+			"떡",
+			"케이크",
+			"마카롱",
+			"빙수",
 	};
 	
 	public String drink_name[] = {
-			"에이드",
 			"아메리카노",
 			"카라멜마끼아또",
+			"이온음료",
 			"탄산음료",
-			"아이스티",
-			"생과일주스",
-			"이온음료"
+			"에이드",
+			"홍차"
 	};
 	
 	public String food_name[] = {
-			"백숙",
-			"비빔밥",
+			
+			"떡볶이",
 			"보쌈",
-			"치킨",
-			"닭볶음탕",
-			"짜장면",
-			"족발",
-			"피자",
 			"돈까스",
-			"라면",
-			"떡볶이"
+			"닭볶음탕",
+			"피자",		
+			"라면",			
 	};
 
 	/**
