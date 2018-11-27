@@ -94,6 +94,106 @@ public class Food_choice extends JFrame {
 		tabbedPane.setBackground(new Color(255, 182, 193));
 		contentPane.add(tabbedPane);
 		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(255, 192, 203));
+		tabbedPane.addTab("New tab", null, panel_1, null);
+		panel_1.setLayout(null);
+		
+		JButton btnNewButton1 = new JButton("\uC2DC\uC791");
+		btnNewButton1.setBounds(80, 333, 179, 36);
+		panel_1.add(btnNewButton1);
+		btnNewButton1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnNewButton1.setBackground(new Color(230, 230, 250));
+		btnNewButton1.setForeground(new Color(106, 90, 205));
+		btnNewButton1.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+		JButton btnNewButton_2 = new JButton("");
+		btnNewButton_2.setBounds(12, 10, 49, 47);
+		panel_1.add(btnNewButton_2);
+		btnNewButton_2.setBackground(new Color(255, 192, 203));
+		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		//아이콘 없애기
+		btnNewButton_2.setFocusPainted( false );
+		btnNewButton_2.setBorder(null);
+		
+	
+		JButton button1 = new JButton("\uC815\uC9C0");
+		button1.setBounds(329, 333, 179, 36);
+		panel_1.add(button1);
+		button1.setBackground(new Color(255, 204, 255));
+		button1.setForeground(new Color(186, 85, 211));
+		button1.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+		JLabel label1 = new JLabel("\uC2DD\uC0AC\uC885\uB958");
+		label1.setBounds(242, 303, 102, 26);
+		panel_1.add(label1);
+		label1.setBackground(new Color(176, 224, 230));
+		label1.setForeground(new Color(199, 21, 133));
+		label1.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ybail\\Desktop\\meal.PNG"));
+		lblNewLabel.setBounds(103, 65, 375, 239);
+		panel_1.add(lblNewLabel);
+		
+		btnNewButton_2.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Home_main home_frame = new Home_main();
+				home_frame.setVisible(true);
+				dispose();
+			}
+		});
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(new Color(221, 160, 221));
+		tabbedPane.addTab("New tab", null, panel_2, null);
+		panel_2.setLayout(null);
+		
+		JButton btnNewButton_3 = new JButton("");
+		btnNewButton_3.setBounds(12, 10, 49, 47);
+		panel_2.add(btnNewButton_3);
+		btnNewButton_3.setBackground(new Color(221, 160, 221));
+		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		//아이콘 없애기
+		btnNewButton_3.setFocusPainted( false );
+		btnNewButton_3.setBorder(null);
+		
+		JLabel lblNewLabel1 = new JLabel("");
+		lblNewLabel1.setIcon(new ImageIcon("C:\\Users\\ybail\\Downloads\\question (2).png"));
+		lblNewLabel1.setBounds(226, 127, 143, 181);
+		panel_2.add(lblNewLabel1);
+		
+		JButton btnNewButton2 = new JButton("\uC2DC\uC791");
+		btnNewButton2.setBounds(80, 333, 179, 36);
+		panel_2.add(btnNewButton2);
+		btnNewButton2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnNewButton2.setBackground(new Color(230, 230, 250));
+		btnNewButton2.setForeground(new Color(106, 90, 205));
+		btnNewButton2.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+	
+		JButton button2 = new JButton("\uC815\uC9C0");
+		button2.setBounds(329, 333, 179, 36);
+		panel_2.add(button2);
+		button2.setBackground(new Color(255, 204, 255));
+		button2.setForeground(new Color(186, 85, 211));
+		button2.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
+		
+		JLabel label2 = new JLabel("\uB9C8\uC2E4\uAC70\uB9AC");
+		label2.setBounds(242, 302, 106, 26);
+		panel_2.add(label2);
+		label2.setBackground(new Color(176, 224, 230));
+		label2.setForeground(new Color(139, 0, 139));
+		label2.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
+		
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(173, 216, 230));
 		tabbedPane.addTab("New tab", null, panel, null);
@@ -131,60 +231,10 @@ public class Food_choice extends JFrame {
 		label.setBounds(257, 302, 72, 26);
 		panel.add(label);
 		label.setBackground(new Color(176, 224, 230));
-		label.setForeground(new Color(65, 105, 225));
+		label.setForeground(new Color(0, 0, 255));
 		label.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
 		
 		btnNewButton_1.addActionListener(new ActionListener(){
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				Home_main home_frame = new Home_main();
-				home_frame.setVisible(true);
-				dispose();
-			}
-		});
-		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(new Color(255, 192, 203));
-		tabbedPane.addTab("New tab", null, panel_1, null);
-		panel_1.setLayout(null);
-		
-		JButton btnNewButton1 = new JButton("\uC2DC\uC791");
-		btnNewButton1.setBounds(80, 333, 179, 36);
-		panel_1.add(btnNewButton1);
-		btnNewButton1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnNewButton1.setBackground(new Color(230, 230, 250));
-		btnNewButton1.setForeground(new Color(106, 90, 205));
-		btnNewButton1.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
-		
-		JButton btnNewButton_2 = new JButton("");
-		btnNewButton_2.setBounds(12, 10, 49, 47);
-		panel_1.add(btnNewButton_2);
-		btnNewButton_2.setBackground(new Color(255, 192, 203));
-		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
-		//아이콘 없애기
-		btnNewButton_2.setFocusPainted( false );
-		btnNewButton_2.setBorder(null);
-		
-	
-		JButton button1 = new JButton("\uC815\uC9C0");
-		button1.setBounds(329, 333, 179, 36);
-		panel_1.add(button1);
-		button1.setBackground(new Color(255, 204, 255));
-		button1.setForeground(new Color(186, 85, 211));
-		button1.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
-		
-		JLabel label1 = new JLabel("\uB180\uAC70\uB9AC");
-		label1.setBounds(257, 302, 72, 26);
-		panel_1.add(label1);
-		label1.setBackground(new Color(176, 224, 230));
-		label1.setForeground(new Color(199, 21, 133));
-		label1.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
-		
-		btnNewButton_2.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -210,55 +260,12 @@ public class Food_choice extends JFrame {
 			}
 		});
 		
-		JPanel panel_2 = new JPanel();
-		panel_2.setBackground(new Color(221, 160, 221));
-		tabbedPane.addTab("New tab", null, panel_2, null);
-		panel_2.setLayout(null);
+		JLabel lblNewLabel3 = new JLabel("");
+		lblNewLabel3.setIcon(new ImageIcon("C:\\Users\\ybail\\Downloads\\question (2).png"));
+		lblNewLabel3.setBounds(226, 127, 143, 181);
+		panel.add(lblNewLabel3);
 		
-		JButton btnNewButton_3 = new JButton("");
-		btnNewButton_3.setBounds(12, 10, 49, 47);
-		panel_2.add(btnNewButton_3);
-		btnNewButton_3.setBackground(new Color(221, 160, 221));
-		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
-		//아이콘 없애기
-		btnNewButton_3.setFocusPainted( false );
-		btnNewButton_3.setBorder(null);
 		
-		JButton btnNewButton2 = new JButton("\uC2DC\uC791");
-		btnNewButton2.setBounds(80, 333, 179, 36);
-		panel_2.add(btnNewButton2);
-		btnNewButton2.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnNewButton2.setBackground(new Color(230, 230, 250));
-		btnNewButton2.setForeground(new Color(106, 90, 205));
-		btnNewButton2.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
-		
-	
-		JButton button2 = new JButton("\uC815\uC9C0");
-		button2.setBounds(329, 333, 179, 36);
-		panel_2.add(button2);
-		button2.setBackground(new Color(255, 204, 255));
-		button2.setForeground(new Color(186, 85, 211));
-		button2.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
-		
-		JLabel label2 = new JLabel("\uB180\uAC70\uB9AC");
-		label2.setBounds(257, 302, 72, 26);
-		panel_2.add(label2);
-		label2.setBackground(new Color(176, 224, 230));
-		label2.setForeground(new Color(139, 0, 139));
-		label2.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
-		
-		btnNewButton_3.addActionListener(new ActionListener(){
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				Home_main home_frame = new Home_main();
-				home_frame.setVisible(true);
-				dispose();
-			}
-		});
 		setLocation(550,200);
 		
 		//setUndecorated(true);
