@@ -64,6 +64,7 @@ public class Self_choice extends JFrame {
 		contentPane.add(textField);
 		
 		textField_1 = new JTextField();
+		textField_1.setVisible(false);
 		textField_1.setColumns(10);
 		textField_1.setBounds(320, 96, 135, 33);
 		contentPane.add(textField_1);
