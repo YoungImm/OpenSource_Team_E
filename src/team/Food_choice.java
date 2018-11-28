@@ -39,9 +39,9 @@ public class Food_choice extends JFrame {
 	public Thread looper;
 	private String path = "C:\\Users\\JY\\Desktop\\opensource";
 	public boolean flag = true;
-	public ImageIcon dessert_img[] = new ImageIcon[7];
-	public ImageIcon drink_img[]= new ImageIcon[7];
-	public ImageIcon food_img[]= new ImageIcon[7];
+	public ImageIcon dessert_img[] = new ImageIcon[10];
+	public ImageIcon drink_img[]= new ImageIcon[10];
+	public ImageIcon food_img[]= new ImageIcon[10];
 	public String dessert_name[] = {
 			"",
 			"아이스크림",
@@ -50,26 +50,35 @@ public class Food_choice extends JFrame {
 			"케이크",
 			"마카롱",
 			"빙수",
+			"핫케이크",
+			"과일",
+			"젤리"
 	};
 	
 	public String drink_name[] = {
 			"",
-			"아메리카노",
-			"카라멜마끼아또",
+			"커피",
+			"스무디",
 			"이온음료",
 			"탄산음료",
 			"에이드",
-			"홍차"
+			"홍차",
+			"프라페",
+			"우유",
+			"오렌지쥬스"
 	};
 	
 	public String food_name[] = {
 			"",
+			"초밥",
 			"떡볶이",
 			"보쌈",
 			"돈까스",
 			"닭볶음탕",
 			"피자",		
-			"라면",			
+			"라면",
+			"비빔밥",
+			"치킨"
 	};
 
 	/**
@@ -97,16 +106,16 @@ public class Food_choice extends JFrame {
 		
 		//이미지 배열 생성
 		//dessert
-		for(int i = 1;i<=6;i++) {
+		for(int i = 1;i<=9;i++) {
 			dessert_img[i] = new ImageIcon(path+"\\img\\sample\\dessert\\"+i+".png");
 		}
 		
 		//drink
-		for(int i = 1;i<=6;i++) {
+		for(int i = 1;i<=9;i++) {
 			drink_img[i] = new ImageIcon(path+"\\img\\sample\\drink\\"+i+".png");
 		}
 		//food
-		for(int i = 1;i<=6;i++) {
+		for(int i = 1;i<=9;i++) {
 			food_img[i] = new ImageIcon(path+"\\img\\sample\\food\\"+i+".png");
 		}		
 		
@@ -329,7 +338,7 @@ public class Food_choice extends JFrame {
 					new Thread() {
 						public void run() {
 							while(flag) {
-								int random_num = (int)(Math.random() * 6)+1;
+								int random_num = (int)(Math.random() * 9)+1;
 								//사진 랜덤 고르기
 								lblNewLabel.setIcon(food_img[random_num]);
 								//lblNewLabel_1.setHorizontalAlignment(JLabel.CENTER);
@@ -370,7 +379,7 @@ public class Food_choice extends JFrame {
 						new Thread() {
 							public void run() {
 								while(flag) {
-									int random_num = (int)(Math.random() * 6)+1;
+									int random_num = (int)(Math.random() * 9)+1;
 									//사진 랜덤 고르기
 									lblNewLabel_1.setIcon(drink_img[random_num]);
 
@@ -407,7 +416,7 @@ public class Food_choice extends JFrame {
 					new Thread() {
 						public void run() {
 							while(flag) {
-								int random_num = (int)(Math.random() * 6)+1;
+								int random_num = (int)(Math.random() * 9)+1;
 								//사진 랜덤 고르기
 								lblNewLabel_2.setIcon(dessert_img[random_num]);
 						

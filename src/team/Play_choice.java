@@ -43,9 +43,13 @@ public class Play_choice extends JFrame {
 			"PC방",
 			"노래방",
 			"찜질방",
-			"만화카페"
+			"만화카페",
+			"VR",
+			"영화",
+			"당구",
+			"보드게임"
 	};
-	ImageIcon play_img[] = new ImageIcon[6];
+	ImageIcon play_img[] = new ImageIcon[10];
 
 	/**
 	 * Launch the application.
@@ -71,7 +75,7 @@ public class Play_choice extends JFrame {
 		//이미지 배열 생성
 		//dessert
 		
-		for(int i = 1;i<=5;i++) {
+		for(int i = 1;i<=9;i++) {
 			play_img[i] = new ImageIcon(path +"\\img\\sample\\play\\"+i+".png");
 		}
 		
@@ -138,7 +142,7 @@ public class Play_choice extends JFrame {
 				new Thread() {
 					public void run() {
 						while(flag) {
-							int random_num = (int)(Math.random() * 5)+1;
+							int random_num = (int)(Math.random() * 9)+1;
 							//사진 랜덤 고르기
 							lblNewLabel.setIcon(play_img[random_num]);					
 					
