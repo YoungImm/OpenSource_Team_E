@@ -154,13 +154,7 @@ public class Self_choice extends JFrame {
 		Self_choice.this.revalidate();
 		Self_choice.this.repaint();
 		
-       button_1.addActionListener(new ActionListener(){
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				textField_1.setVisible(false);
-			}
-		});
+       
 		
 	}
 }

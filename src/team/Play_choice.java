@@ -36,7 +36,7 @@ public class Play_choice extends JFrame {
 	private JPanel contentPane;
 	public Thread looper;
 	public boolean flag = true;
-	private String path = "C:\\Users\\JY\\Desktop\\opensource";
+	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
 	public String play_name[] = {
 			"³îÀÌ°ø¿ø",
 			"VR"
@@ -125,7 +125,7 @@ public class Play_choice extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(path + "\\img\\play.PNG"));
-		lblNewLabel.setBounds(87, 45, 407, 241);
+		lblNewLabel.setBounds(85, 58, 407, 241);
 		contentPane.add(lblNewLabel);
 		
 		btnNewButton.addActionListener(new ActionListener(){

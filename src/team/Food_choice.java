@@ -37,7 +37,7 @@ public class Food_choice extends JFrame {
 
 	private JPanel contentPane;
 	public Thread looper;
-	private String path = "C:\\Users\\JY\\Desktop\\opensource";
+	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
 	public boolean flag = true;
 	public ImageIcon dessert_img[] = new ImageIcon[7];
 	public ImageIcon drink_img[]= new ImageIcon[7];
