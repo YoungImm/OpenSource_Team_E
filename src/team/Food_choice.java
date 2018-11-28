@@ -92,23 +92,23 @@ public class Food_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Food_choice() {
-		
+		super ("Choice_Helper");
 		//이미지 배열 생성
 		//dessert
 		for(int i = 0;i<7;i++) {
-			dessert_img[i] = new ImageIcon(path+"\\img\\sample\\dessert"+i+".png");
+			dessert_img[i] = new ImageIcon(path+"\\img\\sample\\dessert\\"+i+".png");
 		}
 		
 		//drink
 		for(int i = 0;i<7;i++) {
-			drink_img[i] = new ImageIcon(path+"\\img\\sample\\drink"+i+".png");
+			drink_img[i] = new ImageIcon(path+"\\img\\sample\\drink\\"+i+".png");
 		}
 		//food
 		for(int i = 0;i<10;i++) {
-			food_img[i] = new ImageIcon(path+"\\img\\sample\\food"+i+".png");
+			food_img[i] = new ImageIcon(path+"\\img\\sample\\food\\"+i+".png");
 		}		
 		
-		super ("Choice_Helper");
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();

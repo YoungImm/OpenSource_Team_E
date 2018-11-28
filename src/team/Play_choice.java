@@ -36,27 +36,12 @@ public class Play_choice extends JFrame {
 	private JPanel contentPane;
 	public Thread looper;
 	public boolean flag = true;
-	public ImageIcon img[] = {
-			new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Baeksuk.jpg"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Cake.jpg"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Chicken.jpg"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Dak-bokkeum-tang.png"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Jokbal.jpg"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Bossam.png"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Caramel Macchiato.png"),
-            //new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\4.png"),
-            //new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\return-button.png")
-
+	private String path = "C:\\Users\\JY\\Desktop\\opensource";
+	public String play_name[] = {
+			"놀이공원",
+			"VR"
 	};
-	public String img_name[] = {
-			"백숙",
-			"케이크",
-			"치킨",
-			"닭볶음탕",
-			"족발",
-			"보쌈",
-			"카라멜 마끼야또"
-	};
+	ImageIcon play_img[] = new ImageIcon[2];
 
 	/**
 	 * Launch the application.
@@ -79,6 +64,15 @@ public class Play_choice extends JFrame {
 	 */
 	public Play_choice() {
 		super ("Choice_Helper");
+		//이미지 배열 생성
+		//dessert
+		
+		for(int i = 0;i<2;i++) {
+			//play_img[i] = new ImageIcon(getClass().getResource(path+"\\img\\sample\\play\\"+i+".jpg"));
+			play_img[i] = new ImageIcon(path +"\\img\\sample\\play\\"+i+".jpg");
+		}
+		
+
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
@@ -112,7 +106,7 @@ public class Play_choice extends JFrame {
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setBackground(new Color(186, 85, 211));
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_1.setIcon(new ImageIcon(path + "\\img\\return-button.png"));
 		btnNewButton_1.setBounds(24, 23, 49, 47);
 		//아이콘 없애기
 		btnNewButton_1.setFocusPainted( false );
@@ -130,7 +124,7 @@ public class Play_choice extends JFrame {
 		});
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\play.PNG"));
+		lblNewLabel.setIcon(new ImageIcon(path + "\\img\\play.PNG"));
 		lblNewLabel.setBounds(87, 45, 407, 241);
 		contentPane.add(lblNewLabel);
 		
@@ -142,16 +136,16 @@ public class Play_choice extends JFrame {
 				new Thread() {
 					public void run() {
 						while(flag) {
-							int random_num = (int)(Math.random() * 6);
+							int random_num = (int)(Math.random() * 2);
 							//사진 랜덤 고르기
-							lblNewLabel.setIcon(img[random_num]);
+							lblNewLabel.setIcon(play_img[random_num]);
 							lblNewLabel.setLocation(160,50);
 //							lblNewLabel.revalidate();
 //							lblNewLabel.repaint();
 //							lblNewLabel.update(lblNewLabel.getGraphics());
 //							
 							//텍스트 랜덤
-							label.setText(img_name[random_num]);
+							label.setText(play_name[random_num]);
 							
 							try {
 								Thread.sleep(100);
