@@ -49,6 +49,7 @@ public class Self_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Self_choice() {
+		super ("Choice_Helper");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
@@ -118,16 +119,18 @@ public class Self_choice extends JFrame {
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setBackground(new Color(255, 204, 51));
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
 		btnNewButton_1.setBounds(24, 23, 49, 47);
 		//아이콘 없애기
 		btnNewButton_1.setFocusPainted( false );
 		btnNewButton_1.setBorder(null);
 		contentPane.add(btnNewButton_1);
 		
-		Label label_1 = new Label("\uC9C1\uC811 \uC785\uB825\uD558\uC138\uC694");
-		label_1.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 19));
-		label_1.setBounds(223, 23, 310, 57);
+		JLabel label_1 = new JLabel("\uC9C1\uC811 \uC785\uB825\uD558\uC138\uC694 (\uCD5C\uB300 6\uAC1C)");
+		label_1.setForeground(new Color(0, 0, 139));
+		label_1.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
+		label_1.setBackground(Color.WHITE);
+		label_1.setBounds(170, 44, 256, 26);
 		contentPane.add(label_1);
 		
 		btnNewButton_1.addActionListener(new ActionListener(){

@@ -45,7 +45,8 @@ public class Home_main extends JFrame {
 	 */
 	//테스트테스트
 	public Home_main() {
-		setTitle("\uACB0\uC815\uC7A5\uC560 \uD574\uACB0 \uD504\uB85C\uADF8\uB7A8");
+		
+		setTitle("Choice_Helper");
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 882, 583);
@@ -73,7 +74,7 @@ public class Home_main extends JFrame {
 		lblNewLabel.setBounds(121, 151, 287, 268);
 		lblNewLabel.setVerticalAlignment(SwingConstants.TOP);
 		panel.add(lblNewLabel);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ybail\\Downloads\\help.png"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\help.png"));
 		
 		JLabel lblHome = new JLabel("HOME");
 		lblHome.setForeground(Color.WHITE);
