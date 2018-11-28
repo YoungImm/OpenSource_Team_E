@@ -36,15 +36,16 @@ public class Play_choice extends JFrame {
 	private JPanel contentPane;
 	public Thread looper;
 	public boolean flag = true;
-	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
+	private String path = "C:\\Users\\JY\\Desktop\\opensource";
 	public String play_name[] = {
+			"",
 			"놀이공원",
 			"PC방",
 			"노래방",
 			"찜질방",
 			"만화카페"
 	};
-	ImageIcon play_img[] = new ImageIcon[2];
+	ImageIcon play_img[] = new ImageIcon[6];
 
 	/**
 	 * Launch the application.
@@ -70,19 +71,18 @@ public class Play_choice extends JFrame {
 		//이미지 배열 생성
 		//dessert
 		
-		for(int i = 1;i<5;i++) {
-			play_img[i] = new ImageIcon(path +"\\img\\sample\\play\\"+i+".jpg");
+		for(int i = 1;i<=5;i++) {
+			play_img[i] = new ImageIcon(path +"\\img\\sample\\play\\"+i+".png");
 		}
 		
 
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(186, 85, 211));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		setLocation(550,200);
+		setLocation(650,220);
 		
 		JButton btnNewButton = new JButton("\uC2DC\uC791");
 		btnNewButton.setBackground(new Color(230, 230, 250));
@@ -138,14 +138,15 @@ public class Play_choice extends JFrame {
 				new Thread() {
 					public void run() {
 						while(flag) {
-							int random_num = (int)(Math.random() * 5);
+							int random_num = (int)(Math.random() * 5)+1;
 							//사진 랜덤 고르기
 							lblNewLabel.setIcon(play_img[random_num]);
-							lblNewLabel.setLocation(160,50);
+							
 //							lblNewLabel.revalidate();
 //							lblNewLabel.repaint();
 //							lblNewLabel.update(lblNewLabel.getGraphics());
 //							
+					
 							//텍스트 랜덤
 							label.setText(play_name[random_num]);
 							
@@ -170,8 +171,6 @@ public class Play_choice extends JFrame {
 			}
 		});		
 		
-		
-		//setUndecorated(true);
 	}
 	
 }

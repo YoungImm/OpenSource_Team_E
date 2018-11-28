@@ -21,7 +21,7 @@ public class Home_main extends JFrame {
 
 	private JPanel contentPane;
 	
-	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
+	private String path = "C:\\Users\\JY\\Desktop\\opensource";
 
 	/**
 	 * Launch the application.
@@ -66,7 +66,7 @@ public class Home_main extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		 
-		JLabel lblNewLabel_1 = new JLabel("\uACB0\uC815\uC7A5\uC560 \uD574\uACB0 \uD504\uB85C\uADF8\uB7A8");
+		JLabel lblNewLabel_1 = new JLabel("\uACB0\uC815 \uB3C4\uC6B0\uBBF8 \uD504\uB85C\uADF8\uB7A8");
 		lblNewLabel_1.setBounds(121, 483, 297, 38);
 		lblNewLabel_1.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
 		lblNewLabel_1.setForeground(Color.WHITE);
@@ -102,10 +102,6 @@ public class Home_main extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				//JButton btn_food = (JButton) e.getSource();
-//				JButton btn_play = (JButton) e.getSource();
-//				JButton btn_choose = (JButton) e.getSource();
-//				
 				Food_choice food_Frame = new Food_choice();
 				food_Frame.setVisible(true);
 				dispose();
@@ -153,10 +149,7 @@ public class Home_main extends JFrame {
 				
 				Self_choice selfFrame = new Self_choice();
 				selfFrame.setVisible(true);
-				//JButton btn_food = (JButton) e.getSource();
-//				JButton btn_play = (JButton) e.getSource();
-//				JButton btn_choose = (JButton) e.getSource();
-//				
+	
 				dispose();
 			}			
 		});

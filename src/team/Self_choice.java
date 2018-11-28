@@ -9,6 +9,7 @@ import java.awt.Button;
 import java.awt.SystemColor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.awt.Font;
 
 import javax.swing.ImageIcon;
@@ -27,15 +28,11 @@ public class Self_choice extends JFrame {
 	private JTextField textField_2;
 	private JTextField textField_3;
 	private JTextField textField_4;
-	private JTextField textField_5;
-	
-<<<<<<< HEAD
-	private int cnt = 0;
+	private JTextField textField_5;	
+	public static ArrayList<String> select_arr  = new ArrayList<String>();
+	public static int cnt = 1;
 	
 	private String path = "C:\\Users\\JY\\Desktop\\opensource";
-=======
-	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
->>>>>>> b665af09b54f6627768bafb3e8721988de008f2e
 
 	/**
 	 * Launch the application.
@@ -58,20 +55,22 @@ public class Self_choice extends JFrame {
 	 */
 	public Self_choice() {
 		super ("Choice_Helper");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 153));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		setLocation(650,220);
 		
 		textField = new JTextField();
+		textField.setFont(new Font("배달의민족 주아", Font.PLAIN, 20));
 		textField.setColumns(10);
 		textField.setBounds(133, 96, 135, 33);
 		contentPane.add(textField);
 		
 		textField_1 = new JTextField();
+		textField_1.setFont(new Font("배달의민족 주아", Font.PLAIN, 20));
 		textField_1.setColumns(10);
 		textField_1.setVisible(false);
 		textField_1.setBounds(320, 96, 135, 33);
@@ -79,12 +78,14 @@ public class Self_choice extends JFrame {
 		contentPane.add(textField_1);
 		
 		textField_2 = new JTextField();
+		textField_2.setFont(new Font("배달의민족 주아", Font.PLAIN, 20));
 		textField_2.setColumns(10);
 		textField_2.setBounds(133, 166, 135, 33);
 		textField_2.setVisible(false);
 		contentPane.add(textField_2);
 		
 		textField_3 = new JTextField();
+		textField_3.setFont(new Font("배달의민족 주아", Font.PLAIN, 20));
 		textField_3.setColumns(10);
 		textField_3.setBounds(320, 166, 135, 33);
 		
@@ -92,12 +93,14 @@ public class Self_choice extends JFrame {
 		textField_3.setVisible(false);
 		
 		textField_4 = new JTextField();
+		textField_4.setFont(new Font("배달의민족 주아", Font.PLAIN, 20));
 		textField_4.setColumns(10);
 		textField_4.setBounds(133, 237, 135, 33);
 		textField_4.setVisible(false);
 		contentPane.add(textField_4);
 		
 		textField_5 = new JTextField();
+		textField_5.setFont(new Font("배달의민족 주아", Font.PLAIN, 20));
 		textField_5.setColumns(10);
 		textField_5.setBounds(320, 237, 135, 33);
 		textField_5.setVisible(false);
@@ -117,13 +120,6 @@ public class Self_choice extends JFrame {
 		button.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		button.setBounds(330, 361, 179, 36);
 		contentPane.add(button);
-		
-		JLabel label = new JLabel("\uACB0\uACFC\uAC12");
-		label.setBackground(new Color(255, 255, 255));
-		label.setForeground(new Color(0, 0, 139));
-		label.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
-		label.setBounds(265, 307, 80, 26);
-		contentPane.add(label);
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setBackground(new Color(255, 204, 51));
@@ -149,6 +145,14 @@ public class Self_choice extends JFrame {
 		button_1.setBounds(520, 23, 49, 47);
 		contentPane.add(button_1);
 		
+		JButton button_2 = new JButton("");
+		button_2.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\minus.png"));
+		button_2.setFocusPainted(false);
+		button_2.setBorder(null);
+		button_2.setBackground(new Color(255, 204, 51));
+		button_2.setBounds(520, 99, 49, 47);
+		contentPane.add(button_2);
+		
 		btnNewButton_1.addActionListener(new ActionListener(){
 			
 			@Override
@@ -159,22 +163,43 @@ public class Self_choice extends JFrame {
 			}
 		});
 		
-		Self_choice.this.revalidate();
-		Self_choice.this.repaint();
+	//	Self_choice.this.revalidate();
+	//	Self_choice.this.repaint();
 		
-<<<<<<< HEAD
-		
+		JTextField text_arr[] = {textField,textField_1,textField_2,textField_3,textField_4,textField_5};
 		
        button_1.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				
+				if(1<=cnt &&  cnt < 6) {
+					text_arr[cnt++].setVisible(true);
+				}
 			}
 		});
-=======
        
->>>>>>> b665af09b54f6627768bafb3e8721988de008f2e
-		
+       button_2.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if(cnt > 1 && cnt <=6) {
+					text_arr[--cnt].setVisible(false);
+				}
+			}
+		});
+       
+       btnNewButton.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				for(int i = 0;i<cnt;i++) {
+					select_arr.add(text_arr[i].getText());					
+				}
+				Self_choice_show self_choice_show = new Self_choice_show();
+				self_choice_show.setVisible(true);
+				dispose();
+			}
+		});
+       
 	}
 }
