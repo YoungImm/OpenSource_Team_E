@@ -29,7 +29,7 @@ public class Self_choice extends JFrame {
 	private JTextField textField_4;
 	private JTextField textField_5;
 	
-	private String path = "C:\\Users\\JY\\Desktop\\opensource";
+	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
 
 	/**
 	 * Launch the application.

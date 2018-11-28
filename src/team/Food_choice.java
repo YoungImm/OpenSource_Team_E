@@ -233,11 +233,12 @@ public class Food_choice extends JFrame {
 		button2.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
 		JLabel label2 = new JLabel("\uB9C8\uC2E4\uAC83");
-		label2.setBounds(255, 297, 132, 26);
+		label2.setBounds(195, 297, 225, 26);
 		panel_2.add(label2);
 		label2.setBackground(new Color(176, 224, 230));
 		label2.setForeground(new Color(139, 0, 139));
 		label2.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
+		label2.setHorizontalAlignment(Label.CENTER);//
 		
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(path + "\\img\\drink.PNG"));
