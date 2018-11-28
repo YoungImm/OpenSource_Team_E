@@ -81,6 +81,7 @@ public class Food_choice extends JFrame {
 	 */
 	public Food_choice() {
 		
+		super ("Choice_Helper");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
@@ -90,13 +91,15 @@ public class Food_choice extends JFrame {
 		contentPane.setLayout(null);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		tabbedPane.setToolTipText("");
 		tabbedPane.setBounds(0, 0, 592, 432);
 		tabbedPane.setBackground(new Color(255, 182, 193));
 		contentPane.add(tabbedPane);
 		
 		JPanel panel_1 = new JPanel();
+		panel_1.setToolTipText("");
 		panel_1.setBackground(new Color(255, 192, 203));
-		tabbedPane.addTab("New tab", null, panel_1, null);
+		tabbedPane.addTab("meal", null, panel_1, null);
 		panel_1.setLayout(null);
 		
 		JButton btnNewButton1 = new JButton("\uC2DC\uC791");
@@ -114,7 +117,7 @@ public class Food_choice extends JFrame {
 		btnNewButton_2.setBounds(12, 10, 49, 47);
 		panel_1.add(btnNewButton_2);
 		btnNewButton_2.setBackground(new Color(255, 192, 203));
-		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
 		//아이콘 없애기
 		btnNewButton_2.setFocusPainted( false );
 		btnNewButton_2.setBorder(null);
@@ -135,7 +138,7 @@ public class Food_choice extends JFrame {
 		label1.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\ybail\\Desktop\\meal.PNG"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\meal.PNG"));
 		lblNewLabel.setBounds(103, 61, 375, 239);
 		panel_1.add(lblNewLabel);
 		
@@ -151,14 +154,14 @@ public class Food_choice extends JFrame {
 		
 		JPanel panel_2 = new JPanel();
 		panel_2.setBackground(new Color(221, 160, 221));
-		tabbedPane.addTab("New tab", null, panel_2, null);
+		tabbedPane.addTab("drink", null, panel_2, null);
 		panel_2.setLayout(null);
 		
 		JButton btnNewButton_3 = new JButton("");
 		btnNewButton_3.setBounds(12, 10, 49, 47);
 		panel_2.add(btnNewButton_3);
 		btnNewButton_3.setBackground(new Color(221, 160, 221));
-		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
 		//아이콘 없애기
 		btnNewButton_3.setFocusPainted( false );
 		btnNewButton_3.setBorder(null);
@@ -200,20 +203,20 @@ public class Food_choice extends JFrame {
 		label2.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
 		
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Desktop\\drink.PNG"));
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\drink.PNG"));
 		lblNewLabel_1.setBounds(83, 56, 418, 241);
 		panel_2.add(lblNewLabel_1);
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(173, 216, 230));
-		tabbedPane.addTab("New tab", null, panel, null);
+		tabbedPane.addTab("dessert", null, panel, null);
 		panel.setLayout(null);
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setBounds(12, 10, 49, 47);
 		panel.add(btnNewButton_1);
 		btnNewButton_1.setBackground(new Color(173, 216, 230));
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
 		//아이콘 없애기
 		btnNewButton_1.setFocusPainted( false );
 		btnNewButton_1.setBorder(null);
@@ -261,7 +264,7 @@ public class Food_choice extends JFrame {
 		btnNewButton.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
 		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\ybail\\Desktop\\dessert.PNG"));
+		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\dessert.PNG"));
 		lblNewLabel_2.setBounds(94, 67, 426, 218);
 		panel.add(lblNewLabel_2);
 		

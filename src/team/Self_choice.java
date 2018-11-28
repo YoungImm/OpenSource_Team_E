@@ -49,6 +49,7 @@ public class Self_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Self_choice() {
+		super ("Choice_Helper");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
@@ -111,7 +112,7 @@ public class Self_choice extends JFrame {
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setBackground(new Color(255, 204, 51));
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\ybail\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
 		btnNewButton_1.setBounds(24, 23, 49, 47);
 		//아이콘 없애기
 		btnNewButton_1.setFocusPainted( false );
