@@ -3,7 +3,7 @@
 
 # Overview
 
-![ex_screenshot](./img/overview.PNG)
+![ex_screenshot](./img/overview.gif)
 
 
 # Introduction
