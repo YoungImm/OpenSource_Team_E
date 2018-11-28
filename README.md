@@ -41,5 +41,5 @@ Updates
 Updates
 * 사용자 선택 화면 기능 구현 및 UI 만들기
 * 전체 기능 점검
-
+![ex_screenshot](./img/user_choice.gif)
 
