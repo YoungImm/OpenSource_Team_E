@@ -1,6 +1,9 @@
 # OpenSource_Team_E
     조선대학교 오픈소스SW개론 수업에서 수행하는 팀프로젝트입니다.
 
+# Design
+* 초기 디자인
+
 
 # Overview
 
