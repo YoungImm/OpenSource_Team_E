@@ -68,7 +68,6 @@ public class Play_choice extends JFrame {
 		//dessert
 		
 		for(int i = 0;i<2;i++) {
-			//play_img[i] = new ImageIcon(getClass().getResource(path+"\\img\\sample\\play\\"+i+".jpg"));
 			play_img[i] = new ImageIcon(path +"\\img\\sample\\play\\"+i+".jpg");
 		}
 		

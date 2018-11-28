@@ -28,6 +28,8 @@ public class Self_choice extends JFrame {
 	private JTextField textField_3;
 	private JTextField textField_4;
 	private JTextField textField_5;
+	
+	private String path = "C:\\Users\\JY\\Desktop\\opensource";
 
 	/**
 	 * Launch the application.
@@ -119,7 +121,7 @@ public class Self_choice extends JFrame {
 		
 		JButton btnNewButton_1 = new JButton("");
 		btnNewButton_1.setBackground(new Color(255, 204, 51));
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_1.setIcon(new ImageIcon(path+"\\img\\return-button.png"));
 		btnNewButton_1.setBounds(24, 23, 49, 47);
 		//아이콘 없애기
 		btnNewButton_1.setFocusPainted( false );
@@ -134,7 +136,7 @@ public class Self_choice extends JFrame {
 		contentPane.add(label_1);
 		
 		JButton button_1 = new JButton("");
-		button_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Desktop\\plus.png"));
+		button_1.setIcon(new ImageIcon(path + "\\img\\plus.png"));
 		button_1.setFocusPainted(false);
 		button_1.setBorder(null);
 		button_1.setBackground(new Color(255, 204, 51));

@@ -20,6 +20,8 @@ import java.awt.event.ActionEvent;
 public class Home_main extends JFrame {
 
 	private JPanel contentPane;
+	
+	private String path = "C:\\Users\\JY\\Desktop\\opensource";
 
 	/**
 	 * Launch the application.
@@ -74,7 +76,7 @@ public class Home_main extends JFrame {
 		lblNewLabel.setBounds(121, 151, 287, 268);
 		lblNewLabel.setVerticalAlignment(SwingConstants.TOP);
 		panel.add(lblNewLabel);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\help.png"));
+		lblNewLabel.setIcon(new ImageIcon(path+"\\img\\help.png"));
 		
 		JLabel lblHome = new JLabel("HOME");
 		lblHome.setForeground(Color.WHITE);
