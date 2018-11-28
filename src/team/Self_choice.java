@@ -148,7 +148,7 @@ public class Self_choice extends JFrame {
 		contentPane.add(button_1);
 		
 		JButton button_2 = new JButton("");
-		button_2.setIcon(new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\minus.png"));
+		button_2.setIcon(new ImageIcon(path + "\\img\\minus.png"));
 		button_2.setFocusPainted(false);
 		button_2.setBorder(null);
 		button_2.setBackground(new Color(255, 204, 51));
