@@ -29,6 +29,8 @@ public class Self_choice extends JFrame {
 	private JTextField textField_4;
 	private JTextField textField_5;
 	
+	private int cnt = 0;
+	
 	private String path = "C:\\Users\\JY\\Desktop\\opensource";
 
 	/**
@@ -156,11 +158,13 @@ public class Self_choice extends JFrame {
 		Self_choice.this.revalidate();
 		Self_choice.this.repaint();
 		
+		
+		
        button_1.addActionListener(new ActionListener(){
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				textField_1.setVisible(false);
+				
 			}
 		});
 		
