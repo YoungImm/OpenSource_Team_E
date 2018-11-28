@@ -113,6 +113,9 @@ public class Food_choice extends JFrame {
 		btnNewButton1.setForeground(new Color(106, 90, 205));
 		btnNewButton1.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
+       
+	
+		
 		JButton btnNewButton_2 = new JButton("");
 		btnNewButton_2.setBounds(12, 10, 49, 47);
 		panel_1.add(btnNewButton_2);
@@ -131,7 +134,7 @@ public class Food_choice extends JFrame {
 		button1.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
 		JLabel label1 = new JLabel("\uC2DD\uC0AC\uC885\uB958");
-		label1.setBounds(255, 298, 102, 26);
+		label1.setBounds(255, 298, 119, 26);
 		panel_1.add(label1);
 		label1.setBackground(new Color(176, 224, 230));
 		label1.setForeground(new Color(199, 21, 133));
@@ -196,7 +199,7 @@ public class Food_choice extends JFrame {
 		button2.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
 		JLabel label2 = new JLabel("\uB9C8\uC2E4\uAC83");
-		label2.setBounds(255, 297, 81, 26);
+		label2.setBounds(255, 297, 132, 26);
 		panel_2.add(label2);
 		label2.setBackground(new Color(176, 224, 230));
 		label2.setForeground(new Color(139, 0, 139));
@@ -241,7 +244,7 @@ public class Food_choice extends JFrame {
 		button.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
 		JLabel label = new JLabel("\uB514\uC800\uD2B8");
-		label.setBounds(257, 302, 72, 26);
+		label.setBounds(257, 302, 141, 26);
 		panel.add(label);
 		label.setBackground(new Color(176, 224, 230));
 		label.setForeground(new Color(0, 0, 255));
@@ -282,5 +285,128 @@ public class Food_choice extends JFrame {
 		setLocation(550,200);
 		
 		//setUndecorated(true);
+		 btnNewButton1.addActionListener(new ActionListener(){
+				
+				@Override
+				public void actionPerformed(ActionEvent e) {				
+					
+					new Thread() {
+						public void run() {
+							while(flag) {
+								int random_num = (int)(Math.random() * 6);
+								//사진 랜덤 고르기
+								lblNewLabel.setIcon(img[random_num]);
+								lblNewLabel.setLocation(160,50);
+//								lblNewLabel.revalidate();
+//								lblNewLabel.repaint();
+//								lblNewLabel.update(lblNewLabel.getGraphics());
+//								
+								//텍스트 랜덤
+								label1.setText(img_name[random_num]);
+								
+								try {
+									Thread.sleep(100);
+								} catch (InterruptedException e1) {
+									// TODO Auto-generated catch block
+									e1.printStackTrace();
+								}
+							}
+						}
+					}.start();
+					flag = true;				
+				}
+			});
+			
+			button1.addActionListener(new ActionListener(){
+				
+				@Override
+				public void actionPerformed(ActionEvent e) {		
+					flag = false;
+				}
+			});		
+			
+			 btnNewButton2.addActionListener(new ActionListener(){
+					
+					@Override
+					public void actionPerformed(ActionEvent e) {				
+						
+						new Thread() {
+							public void run() {
+								while(flag) {
+									int random_num = (int)(Math.random() * 6);
+									//사진 랜덤 고르기
+									lblNewLabel_1.setIcon(img[random_num]);
+									lblNewLabel_1.setLocation(160,50);
+//									lblNewLabel.revalidate();
+//									lblNewLabel.repaint();
+//									lblNewLabel.update(lblNewLabel.getGraphics());
+//									
+									//텍스트 랜덤
+									label2.setText(img_name[random_num]);
+									
+									try {
+										Thread.sleep(100);
+									} catch (InterruptedException e1) {
+										// TODO Auto-generated catch block
+										e1.printStackTrace();
+									}
+								}
+							}
+						}.start();
+						flag = true;				
+					}
+				});
+				
+				button2.addActionListener(new ActionListener(){
+					
+					@Override
+					public void actionPerformed(ActionEvent e) {		
+						flag = false;
+					}
+				});		
+				
+				
+				 btnNewButton.addActionListener(new ActionListener(){
+						
+						@Override
+						public void actionPerformed(ActionEvent e) {				
+							
+							new Thread() {
+								public void run() {
+									while(flag) {
+										int random_num = (int)(Math.random() * 6);
+										//사진 랜덤 고르기
+										lblNewLabel_2.setIcon(img[random_num]);
+										lblNewLabel_2.setLocation(160,50);
+//										lblNewLabel.revalidate();
+//										lblNewLabel.repaint();
+//										lblNewLabel.update(lblNewLabel.getGraphics());
+//										
+										//텍스트 랜덤
+										label.setText(img_name[random_num]);
+										
+										try {
+											Thread.sleep(100);
+										} catch (InterruptedException e1) {
+											// TODO Auto-generated catch block
+											e1.printStackTrace();
+										}
+									}
+								}
+							}.start();
+							flag = true;				
+						}
+					});
+					
+					button.addActionListener(new ActionListener(){
+						
+						@Override
+						public void actionPerformed(ActionEvent e) {		
+							flag = false;
+						}
+					});		
+					
+					
+					//setUndecorated(true);
 	}
 }
