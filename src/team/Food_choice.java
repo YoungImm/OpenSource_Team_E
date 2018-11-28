@@ -37,20 +37,32 @@ public class Food_choice extends JFrame {
 
 	private JPanel contentPane;
 	public Thread looper;
+	private String path = "C:\\Users\\JY\\Desktop\\opensource";
 	public boolean flag = true;
-	public ImageIcon img[] = {
-			new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Baeksuk.jpg"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Cake.jpg"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Chicken.jpg"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Dak-bokkeum-tang.png"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Jokbal.jpg"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Bossam.png"),
-            new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\sample\\Caramel Macchiato.png"),
-            //new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\4.png"),
-            //new ImageIcon("C:\\Users\\JY\\Desktop\\opensource\\img\\return-button.png")
-
+	public ImageIcon dessert_img[];
+	public ImageIcon drink_img[];
+	public ImageIcon food_img[];
+	public String dessert_name[] = {
+			"¹é¼÷",
+			"ÄÉÀÌÅ©",
+			"Ä¡Å²",
+			"´ßººÀ½ÅÁ",
+			"Á·¹ß",
+			"º¸½Ó",
+			"Ä«¶ó¸á ¸¶³¢¾ß¶Ç"
 	};
-	public String img_name[] = {
+	
+	public String drink_name[] = {
+			"¹é¼÷",
+			"ÄÉÀÌÅ©",
+			"Ä¡Å²",
+			"´ßººÀ½ÅÁ",
+			"Á·¹ß",
+			"º¸½Ó",
+			"Ä«¶ó¸á ¸¶³¢¾ß¶Ç"
+	};
+	
+	public String food_name[] = {
 			"¹é¼÷",
 			"ÄÉÀÌÅ©",
 			"Ä¡Å²",
@@ -80,6 +92,21 @@ public class Food_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Food_choice() {
+		
+		//ÀÌ¹ÌÁö ¹è¿­ »ý¼º
+		//dessert
+		for(int i = 0;i<7;i++) {
+			dessert_img[i] = new ImageIcon(path+"\\img\\sample\\dessert"+i+".png");
+		}
+		
+		//drink
+		for(int i = 0;i<7;i++) {
+			drink_img[i] = new ImageIcon(path+"\\img\\sample\\drink"+i+".png");
+		}
+		//food
+		for(int i = 0;i<10;i++) {
+			food_img[i] = new ImageIcon(path+"\\img\\sample\\food"+i+".png");
+		}		
 		
 		super ("Choice_Helper");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
