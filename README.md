@@ -13,7 +13,7 @@
 
 # Design
 * 설계
-![ex_screenshot](./img/first_design.PNG)
+![ex_screenshot](./img/first_design.JPG)
 
 * 최종 디자인
 ![ex_screenshot](./img/final_design.PNG)
