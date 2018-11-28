@@ -54,7 +54,7 @@ public class Self_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Self_choice() {
-		super ("Choice_Helper");
+		super ("결정 도우미 프로그램");
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 153));
@@ -162,9 +162,6 @@ public class Self_choice extends JFrame {
 				dispose();
 			}
 		});
-		
-	//	Self_choice.this.revalidate();
-	//	Self_choice.this.repaint();
 		
 		JTextField text_arr[] = {textField,textField_1,textField_2,textField_3,textField_4,textField_5};
 		

@@ -67,7 +67,7 @@ public class Play_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Play_choice() {
-		super ("Choice_Helper");
+		super ("결정 도우미 프로그램");
 		//이미지 배열 생성
 		//dessert
 		
@@ -140,12 +140,7 @@ public class Play_choice extends JFrame {
 						while(flag) {
 							int random_num = (int)(Math.random() * 5)+1;
 							//사진 랜덤 고르기
-							lblNewLabel.setIcon(play_img[random_num]);
-							
-//							lblNewLabel.revalidate();
-//							lblNewLabel.repaint();
-//							lblNewLabel.update(lblNewLabel.getGraphics());
-//							
+							lblNewLabel.setIcon(play_img[random_num]);					
 					
 							//텍스트 랜덤
 							label.setText(play_name[random_num]);

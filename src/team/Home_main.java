@@ -48,7 +48,7 @@ public class Home_main extends JFrame {
 	//테스트테스트
 	public Home_main() {
 		
-		setTitle("Choice_Helper");
+		setTitle("결정 도우미 프로그램");
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 882, 583);

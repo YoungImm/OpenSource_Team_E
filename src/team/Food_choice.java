@@ -92,9 +92,8 @@ public class Food_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Food_choice() {
-		super ("Choice_Helper");
 
-		setTitle("Choice_Helper");
+		setTitle("결정 도우미 프로그램");
 		
 		//이미지 배열 생성
 		//dessert
