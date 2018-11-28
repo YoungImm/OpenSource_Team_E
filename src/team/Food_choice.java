@@ -37,11 +37,11 @@ public class Food_choice extends JFrame {
 
 	private JPanel contentPane;
 	public Thread looper;
-	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
+	private String path = "C:\\Users\\JY\\Desktop\\opensource";
 	public boolean flag = true;
-	public ImageIcon dessert_img[];
-	public ImageIcon drink_img[];
-	public ImageIcon food_img[];
+	public ImageIcon dessert_img[] = new ImageIcon[7];
+	public ImageIcon drink_img[]= new ImageIcon[7];
+	public ImageIcon food_img[]= new ImageIcon[10];
 	public String dessert_name[] = {
 			"케이크",
 			"아이스크림",
@@ -97,12 +97,10 @@ public class Food_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Food_choice() {
-<<<<<<< HEAD
 		super ("Choice_Helper");
-=======
+
 		setTitle("Choice_Helper");
 		
->>>>>>> a645a0e54c4a86cd09cd4a2b1569b82c0129de96
 		//이미지 배열 생성
 		//dessert
 		for(int i = 0;i<7;i++) {
@@ -118,11 +116,6 @@ public class Food_choice extends JFrame {
 			food_img[i] = new ImageIcon(path+"\\img\\sample\\food\\"+i+".png");
 		}		
 		
-<<<<<<< HEAD
-		
-=======
-
->>>>>>> a645a0e54c4a86cd09cd4a2b1569b82c0129de96
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
@@ -161,7 +154,7 @@ public class Food_choice extends JFrame {
 		btnNewButton_2.setBounds(12, 10, 49, 47);
 		panel_1.add(btnNewButton_2);
 		btnNewButton_2.setBackground(new Color(255, 192, 203));
-		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_2.setIcon(new ImageIcon(path+"\\img\\return-button.png"));
 		//아이콘 없애기
 		btnNewButton_2.setFocusPainted( false );
 		btnNewButton_2.setBorder(null);
@@ -182,7 +175,7 @@ public class Food_choice extends JFrame {
 		label1.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\meal.PNG"));
+		lblNewLabel.setIcon(new ImageIcon(path+"\\img\\meal.PNG"));
 		lblNewLabel.setBounds(103, 61, 375, 239);
 		panel_1.add(lblNewLabel);
 		
@@ -205,7 +198,7 @@ public class Food_choice extends JFrame {
 		btnNewButton_3.setBounds(12, 10, 49, 47);
 		panel_2.add(btnNewButton_3);
 		btnNewButton_3.setBackground(new Color(221, 160, 221));
-		btnNewButton_3.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_3.setIcon(new ImageIcon(path+"\\img\\return-button.png"));
 		//아이콘 없애기
 		btnNewButton_3.setFocusPainted( false );
 		btnNewButton_3.setBorder(null);
@@ -247,7 +240,7 @@ public class Food_choice extends JFrame {
 		label2.setFont(new Font("배달의민족 주아", Font.PLAIN, 25));
 		
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\drink.PNG"));
+		lblNewLabel_1.setIcon(new ImageIcon(path + "\\img\\drink.PNG"));
 		lblNewLabel_1.setBounds(83, 56, 418, 241);
 		panel_2.add(lblNewLabel_1);
 		
@@ -260,7 +253,7 @@ public class Food_choice extends JFrame {
 		btnNewButton_1.setBounds(12, 10, 49, 47);
 		panel.add(btnNewButton_1);
 		btnNewButton_1.setBackground(new Color(173, 216, 230));
-		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\return-button.png"));
+		btnNewButton_1.setIcon(new ImageIcon(path + "\\img\\return-button.png"));
 		//아이콘 없애기
 		btnNewButton_1.setFocusPainted( false );
 		btnNewButton_1.setBorder(null);
@@ -308,7 +301,7 @@ public class Food_choice extends JFrame {
 		btnNewButton.setFont(new Font("배달의민족 도현", Font.PLAIN, 26));
 		
 		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\chosun\\Documents\\OpenSource_Team_E\\img\\dessert.PNG"));
+		lblNewLabel_2.setIcon(new ImageIcon(path + "\\img\\dessert.PNG"));
 		lblNewLabel_2.setBounds(94, 67, 426, 218);
 		panel.add(lblNewLabel_2);
 		
