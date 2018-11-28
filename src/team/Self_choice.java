@@ -54,7 +54,9 @@ public class Self_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Self_choice() {
-		super ("결정 도우미 프로그램");
+		super ("결정 도우미 프로그램"
+				+ "");
+		cnt = 1;
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 153));
@@ -190,7 +192,8 @@ public class Self_choice extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				for(int i = 0;i<cnt;i++) {
-					select_arr.add(text_arr[i].getText());					
+					if(!text_arr[i].getText().matches(""))
+						select_arr.add(text_arr[i].getText());					
 				}
 				Self_choice_show self_choice_show = new Self_choice_show();
 				self_choice_show.setVisible(true);

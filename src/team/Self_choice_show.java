@@ -84,7 +84,7 @@ public class Self_choice_show extends JFrame {
 		btnNewButton_1.setBorder(null);
 		contentPane.add(btnNewButton_1);
 		
-		JLabel label_2 = new JLabel("\uACB0\uACFC\uAC12");
+		JLabel label_2 = new JLabel("");
 		label_2.setHorizontalAlignment(SwingConstants.CENTER);
 		label_2.setForeground(new Color(0, 0, 139));
 		label_2.setFont(new Font("배달의민족 주아", Font.PLAIN, 40));
@@ -121,7 +121,7 @@ public class Self_choice_show extends JFrame {
 						}
 					}
 				}.start();
-				flag = true;			
+				flag = true;	
 			}
 		});
        
