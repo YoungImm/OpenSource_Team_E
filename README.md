@@ -1,10 +1,6 @@
 # OpenSource_Team_E
     조선대학교 오픈소스SW개론 수업에서 수행하는 팀프로젝트입니다.
 
-# Design
-* 초기 디자인
-
-
 # Overview
 
 ![ex_screenshot](./img/overview.PNG)
@@ -15,6 +11,12 @@
 * 개발환경 : Java Swing + Github
 * 내용 : 일상생활에서 생기는 결정의 어려움을 도와주는 프로그램입니다.
 
+# Design
+* 설계
+![ex_screenshot](./img/first_design.PNG)
+
+* 최종 디자인
+![ex_screenshot](./img/final_design.PNG)
 
 # Release Notes
 ### 2018/11/11 #1
