@@ -70,7 +70,6 @@ public class Food_choice extends JFrame {
 	
 	public String food_name[] = {
 			"",
-			"ÃÊ¹ä",
 			"¶±ººÀÌ",
 			"º¸½Ó",
 			"µ·±î½º",
@@ -78,7 +77,8 @@ public class Food_choice extends JFrame {
 			"ÇÇÀÚ",		
 			"¶ó¸é",
 			"ºñºö¹ä",
-			"Ä¡Å²"
+			"Ä¡Å²",
+			"ÃÊ¹ä"
 	};
 
 	/**
