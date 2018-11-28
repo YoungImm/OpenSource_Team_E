@@ -29,9 +29,13 @@ public class Self_choice extends JFrame {
 	private JTextField textField_4;
 	private JTextField textField_5;
 	
+<<<<<<< HEAD
 	private int cnt = 0;
 	
 	private String path = "C:\\Users\\JY\\Desktop\\opensource";
+=======
+	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
+>>>>>>> b665af09b54f6627768bafb3e8721988de008f2e
 
 	/**
 	 * Launch the application.
@@ -158,6 +162,7 @@ public class Self_choice extends JFrame {
 		Self_choice.this.revalidate();
 		Self_choice.this.repaint();
 		
+<<<<<<< HEAD
 		
 		
        button_1.addActionListener(new ActionListener(){
@@ -167,6 +172,9 @@ public class Self_choice extends JFrame {
 				
 			}
 		});
+=======
+       
+>>>>>>> b665af09b54f6627768bafb3e8721988de008f2e
 		
 	}
 }

@@ -21,7 +21,7 @@ public class Home_main extends JFrame {
 
 	private JPanel contentPane;
 	
-	private String path = "C:\\Users\\JY\\Desktop\\opensource";
+	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
 
 	/**
 	 * Launch the application.
