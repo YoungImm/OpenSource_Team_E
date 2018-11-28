@@ -133,6 +133,14 @@ public class Self_choice extends JFrame {
 		label_1.setBounds(170, 44, 256, 26);
 		contentPane.add(label_1);
 		
+		JButton button_1 = new JButton("");
+		button_1.setIcon(new ImageIcon("C:\\Users\\chosun\\Desktop\\plus.png"));
+		button_1.setFocusPainted(false);
+		button_1.setBorder(null);
+		button_1.setBackground(new Color(255, 204, 51));
+		button_1.setBounds(520, 23, 49, 47);
+		contentPane.add(button_1);
+		
 		btnNewButton_1.addActionListener(new ActionListener(){
 			
 			@Override
@@ -146,6 +154,13 @@ public class Self_choice extends JFrame {
 		Self_choice.this.revalidate();
 		Self_choice.this.repaint();
 		
+       button_1.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textField_1.setVisible(false);
+			}
+		});
 		
 	}
 }

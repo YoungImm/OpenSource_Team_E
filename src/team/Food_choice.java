@@ -37,39 +37,44 @@ public class Food_choice extends JFrame {
 
 	private JPanel contentPane;
 	public Thread looper;
-	private String path = "C:\\Users\\JY\\Desktop\\opensource";
+	private String path = "C:\\Users\\chosun\\Documents\\OpenSource_Team_E";
 	public boolean flag = true;
 	public ImageIcon dessert_img[];
 	public ImageIcon drink_img[];
 	public ImageIcon food_img[];
 	public String dessert_name[] = {
-			"백숙",
 			"케이크",
-			"치킨",
-			"닭볶음탕",
-			"족발",
-			"보쌈",
-			"카라멜 마끼야또"
+			"아이스크림",
+			"쿠키",
+			"머랭쿠키",
+			"컵케이크",
+			"팬케잌",
+			"푸딩",
+			"떡"
 	};
 	
 	public String drink_name[] = {
-			"백숙",
-			"케이크",
-			"치킨",
-			"닭볶음탕",
-			"족발",
-			"보쌈",
-			"카라멜 마끼야또"
+			"에이드",
+			"아메리카노",
+			"카라멜마끼아또",
+			"탄산음료",
+			"아이스티",
+			"생과일주스",
+			"이온음료"
 	};
 	
 	public String food_name[] = {
 			"백숙",
-			"케이크",
+			"비빔밥",
+			"보쌈",
 			"치킨",
 			"닭볶음탕",
+			"짜장면",
 			"족발",
-			"보쌈",
-			"카라멜 마끼야또"
+			"피자",
+			"돈까스",
+			"라면",
+			"떡볶이"
 	};
 
 	/**
@@ -92,7 +97,12 @@ public class Food_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Food_choice() {
+<<<<<<< HEAD
 		super ("Choice_Helper");
+=======
+		setTitle("Choice_Helper");
+		
+>>>>>>> a645a0e54c4a86cd09cd4a2b1569b82c0129de96
 		//이미지 배열 생성
 		//dessert
 		for(int i = 0;i<7;i++) {
@@ -108,7 +118,11 @@ public class Food_choice extends JFrame {
 			food_img[i] = new ImageIcon(path+"\\img\\sample\\food\\"+i+".png");
 		}		
 		
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> a645a0e54c4a86cd09cd4a2b1569b82c0129de96
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 608, 471);
 		contentPane = new JPanel();
@@ -322,14 +336,14 @@ public class Food_choice extends JFrame {
 							while(flag) {
 								int random_num = (int)(Math.random() * 6);
 								//사진 랜덤 고르기
-								lblNewLabel.setIcon(img[random_num]);
+								lblNewLabel.setIcon(food_img[random_num]);
 								lblNewLabel.setLocation(160,50);
 //								lblNewLabel.revalidate();
 //								lblNewLabel.repaint();
 //								lblNewLabel.update(lblNewLabel.getGraphics());
 //								
 								//텍스트 랜덤
-								label1.setText(img_name[random_num]);
+								label1.setText(food_name[random_num]);
 								
 								try {
 									Thread.sleep(100);
@@ -362,14 +376,14 @@ public class Food_choice extends JFrame {
 								while(flag) {
 									int random_num = (int)(Math.random() * 6);
 									//사진 랜덤 고르기
-									lblNewLabel_1.setIcon(img[random_num]);
+									lblNewLabel_1.setIcon(drink_img[random_num]);
 									lblNewLabel_1.setLocation(160,50);
 //									lblNewLabel.revalidate();
 //									lblNewLabel.repaint();
 //									lblNewLabel.update(lblNewLabel.getGraphics());
 //									
 									//텍스트 랜덤
-									label2.setText(img_name[random_num]);
+									label2.setText(drink_name[random_num]);
 									
 									try {
 										Thread.sleep(100);
@@ -403,14 +417,14 @@ public class Food_choice extends JFrame {
 									while(flag) {
 										int random_num = (int)(Math.random() * 6);
 										//사진 랜덤 고르기
-										lblNewLabel_2.setIcon(img[random_num]);
+										lblNewLabel_2.setIcon(dessert_img[random_num]);
 										lblNewLabel_2.setLocation(160,50);
 //										lblNewLabel.revalidate();
 //										lblNewLabel.repaint();
 //										lblNewLabel.update(lblNewLabel.getGraphics());
 //										
 										//텍스트 랜덤
-										label.setText(img_name[random_num]);
+										label.setText(dessert_name[random_num]);
 										
 										try {
 											Thread.sleep(100);
