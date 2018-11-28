@@ -64,27 +64,34 @@ public class Self_choice extends JFrame {
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
+		textField_1.setVisible(false);
 		textField_1.setBounds(320, 96, 135, 33);
+		
 		contentPane.add(textField_1);
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
 		textField_2.setBounds(133, 166, 135, 33);
+		textField_2.setVisible(false);
 		contentPane.add(textField_2);
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
 		textField_3.setBounds(320, 166, 135, 33);
+		
 		contentPane.add(textField_3);
+		textField_3.setVisible(false);
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
-		textField_4.setBounds(320, 238, 135, 33);
+		textField_4.setBounds(133, 237, 135, 33);
+		textField_4.setVisible(false);
 		contentPane.add(textField_4);
 		
 		textField_5 = new JTextField();
 		textField_5.setColumns(10);
-		textField_5.setBounds(133, 238, 135, 33);
+		textField_5.setBounds(320, 237, 135, 33);
+		textField_5.setVisible(false);
 		contentPane.add(textField_5);
 		
 		JButton btnNewButton = new JButton("\uC2DC\uC791");
@@ -133,6 +140,8 @@ public class Self_choice extends JFrame {
 			}
 		});
 		
+		Self_choice.this.revalidate();
+		Self_choice.this.repaint();
 		
 		
 	}
