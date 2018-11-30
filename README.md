@@ -5,7 +5,7 @@
 
 ![ex_screenshot](./img/overview.gif)
 
-<br>
+</br>
 
 # Introduction
 > * 개발프로그램 : 결정 도우미 프로그램
