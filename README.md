@@ -12,11 +12,11 @@
 > * 내용 : 일상생활에서 생기는 결정의 어려움을 도와주는 프로그램입니다.
 
 # Design
-* 설계
+> * 설계
 
 ![ex_screenshot](./img/first_design.jpg)
 
-* 최종 디자인
+> * 최종 디자인
 
 ![ex_screenshot](./img/final_design.PNG)
 
