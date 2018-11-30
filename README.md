@@ -5,15 +5,20 @@
 
 ![ex_screenshot](./img/overview.gif)
 
+<br>
 
 # Introduction
 > * 개발프로그램 : 결정 도우미 프로그램
 > * 개발환경 : Java Swing + Github
 > * 내용 : 일상생활에서 생기는 결정의 어려움을 도와주는 프로그램입니다.
 
+<br>
+
 # Preparation
 > 배달의 민족 글꼴 설치하기
 >   UI를 위해서 배달의 민족 주아체,한나체 PRO, 도현체 총 3가지 글꼴을 반드시 설치해야합니다.
+
+<br>
 
 # Design
 >  설계
