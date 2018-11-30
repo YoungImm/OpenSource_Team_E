@@ -191,13 +191,16 @@ public class Self_choice extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				for(int i = 0;i<cnt;i++) {
-					if(!text_arr[i].getText().matches(""))
-						select_arr.add(text_arr[i].getText());					
-				}
-				Self_choice_show self_choice_show = new Self_choice_show();
-				self_choice_show.setVisible(true);
-				dispose();
+					select_arr.clear();
+					for(int i = 0;i<cnt;i++) {
+						if(!text_arr[i].getText().matches(""))
+							select_arr.add(text_arr[i].getText());					
+					}
+					if(select_arr.size() != 0) {
+						Self_choice_show self_choice_show = new Self_choice_show();
+						self_choice_show.setVisible(true);
+						dispose();
+					}
 			}
 		});
        
