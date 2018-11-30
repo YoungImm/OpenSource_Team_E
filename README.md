@@ -33,7 +33,7 @@ Updates
 ### 2018/11/17 #3
 Updates
 > * 11.12에 업데이트한 틀에 홈화면 UI추가
-> ![ex_screenshot](./img/home.PNG)
+![ex_screenshot](./img/home.PNG)
 
 ### 2018/11/21 #4
 Updates
