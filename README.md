@@ -21,7 +21,8 @@
 
 # Preparation
 > 배달의 민족 글꼴 설치하기
->   UI를 위해서 배달의 민족 주아체,한나체 PRO, 도현체 총 3가지 글꼴을 반드시 설치해야합니다.      
+>   UI를 위해서 배달의 민족 주아체,한나체 PRO, 도현체 총 3가지 글꼴을 반드시 설치해야합니다.
+>   <https://www.woowahan.com/#/fonts/hannaPro>
 
 <br/><br/>
 
