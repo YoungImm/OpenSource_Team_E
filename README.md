@@ -5,7 +5,7 @@
 
 # Overview
 
-![ex_screenshot](./img/overview.gif)          
+![ex_screenshot](./img/readme_overview.gif)          
 
 
 <br/><br/>
