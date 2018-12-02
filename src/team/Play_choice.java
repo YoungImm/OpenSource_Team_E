@@ -71,7 +71,7 @@ public class Play_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Play_choice() {
-		super ("결정 도우미 프로그램");
+		super ("Good Choice");
 		//이미지 배열 생성
 		//dessert
 		

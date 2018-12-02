@@ -48,7 +48,7 @@ public class Home_main extends JFrame {
 	//테스트테스트
 	public Home_main() {
 		
-		setTitle("결정 도우미 프로그램");
+		setTitle("Good Choice");
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 882, 583);
@@ -66,10 +66,11 @@ public class Home_main extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		 
-		JLabel lblNewLabel_1 = new JLabel("\uACB0\uC815 \uB3C4\uC6B0\uBBF8 \uD504\uB85C\uADF8\uB7A8");
-		lblNewLabel_1.setBounds(121, 483, 297, 38);
+		JLabel lblNewLabel_1 = new JLabel("Good Choice");
+		lblNewLabel_1.setBounds(102, 471, 297, 38);
 		lblNewLabel_1.setFont(new Font("배달의민족 한나체 Pro", Font.PLAIN, 25));
 		lblNewLabel_1.setForeground(Color.WHITE);
+		lblNewLabel_1.setHorizontalAlignment(JLabel.CENTER);
 		panel.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel = new JLabel("");

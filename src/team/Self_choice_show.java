@@ -49,7 +49,7 @@ public class Self_choice_show extends JFrame {
 	 * Create the frame.
 	 */
 	public Self_choice_show() {
-		super ("결정 도우미 프로그램");
+		super ("Good Choice");
 		this.select_arr = Self_choice.select_arr;
 		this.cnt = select_arr.size();
 		setBounds(100, 100, 608, 471);

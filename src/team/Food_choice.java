@@ -102,7 +102,7 @@ public class Food_choice extends JFrame {
 	 */
 	public Food_choice() {
 
-		setTitle("결정 도우미 프로그램");
+		setTitle("Good Choice");
 		
 		//이미지 배열 생성
 		//dessert

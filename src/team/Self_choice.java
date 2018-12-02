@@ -54,7 +54,7 @@ public class Self_choice extends JFrame {
 	 * Create the frame.
 	 */
 	public Self_choice() {
-		super ("결정 도우미 프로그램"
+		super ("Good Choice"
 				+ "");
 		cnt = 1;
 		setBounds(100, 100, 608, 471);
