@@ -204,5 +204,6 @@ public class Self_choice extends JFrame {
 			}
 		});
        
+       
 	}
 }

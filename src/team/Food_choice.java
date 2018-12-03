@@ -340,13 +340,7 @@ public class Food_choice extends JFrame {
 							while(flag) {
 								int random_num = (int)(Math.random() * 9)+1;
 								//사진 랜덤 고르기
-								lblNewLabel.setIcon(food_img[random_num]);
-								//lblNewLabel_1.setHorizontalAlignment(JLabel.CENTER);
-								//lblNewLabel.setLocation(160,50);
-//								lblNewLabel.revalidate();
-//								lblNewLabel.repaint();
-//								lblNewLabel.update(lblNewLabel.getGraphics());
-//								
+								lblNewLabel.setIcon(food_img[random_num]);					
 								//텍스트 랜덤
 								label1.setText(food_name[random_num]);
 								
