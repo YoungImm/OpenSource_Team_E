@@ -52,7 +52,7 @@ Updates
 Updates
 > * 11.12에 업데이트한 틀에 홈화면 UI추가
 
-![ex_screenshot](./img/home.PNG)
+![ex_screenshot](./img/home.PNG)   
 그림 출처 : http://m.joongdo.co.kr/view.php?key=20160328000002389#cb
 
 
